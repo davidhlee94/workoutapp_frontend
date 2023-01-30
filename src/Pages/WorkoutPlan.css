@@ -1,0 +1,88 @@
+.workout-container {
+  border: 0px;
+  padding: 1em 1em 1em 1em;
+  border-radius: 1em;
+  margin-bottom: 1em;
+  background-color: #bccbd08a;
+}
+
+.workout-link {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  align-items: center;
+  height: 2em;
+}
+
+.workoutplan-title-button {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 1em 1em 1em;
+  align-items: center;
+  height: 2em;
+}
+
+.collection-name {
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  color: #2193da;
+  font-size: 1.5em;
+}
+
+.workoutplan-title {
+  margin: 0px;
+}
+
+.bi-trash {
+  color: red;
+}
+
+.form {
+  height: 50vh;
+}
+
+.form-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 50vh;
+}
+
+.input-form {
+  height: 2em;
+}
+
+.input-button {
+  height: 2em;
+  margin-top: 1em;
+}
+
+.workoutplan-form {
+  display: flex;
+  align-items: center;
+  height: 2em;
+  justify-content: flex-end;
+  width: 100%;
+  margin-bottom: 0.5em;
+}
+
+.workoutplan-text {
+  margin: 0;
+  padding-right: 1em;
+}
+
+.text-and-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form-image {
+  margin-bottom: 1em;
+}
+
+.form-title {
+  margin-bottom: 1em;
+}

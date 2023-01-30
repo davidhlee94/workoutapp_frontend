@@ -1,0 +1,100 @@
+[
+  {
+    "muscleGroup": "Chest",
+    "image": [
+      "https://cdn.shopify.com/s/files/1/1214/5580/files/Muscle_Group_Chest.jpg?v=1601050935"
+    ],
+    "exercises": [
+      "Push ups",
+      "Barbell Bench Press",
+      "Pec Fly",
+      "Dumbbell Incline Bench Press",
+      "Cable Fly"
+    ]
+  },
+  {
+    "muscleGroup": "Back",
+    "image": [
+      "https://cdn.shopify.com/s/files/1/1214/5580/files/Muscle_Group_Back.jpg?v=1601050704"
+    ],
+    "exercises": [
+      "Pull ups",
+      "T-Bar Row",
+      "Lat Pull Down",
+      "Deadlift",
+      "Bent Over Row"
+    ]
+  },
+  {
+    "muscleGroup": "Biceps",
+    "image": "https://cdn.shopify.com/s/files/1/1214/5580/files/Muscle_Group_Biceps.jpg?v=1601051495",
+    "exercises": ["Cable Curl", "Dumbbell Curl", "Hammer Curl", "Preacher Curl"]
+  },
+  {
+    "muscleGroup": "Triceps",
+    "image": "https://cdn.shopify.com/s/files/1/1214/5580/files/Muscle_Group_Triceps.jpg?v=1601051412",
+    "exercises": [
+      "Tricep Dips",
+      "Skullcrusher",
+      "Close-Grip Bench Press",
+      "Single-Arm Cable Kick Back"
+    ]
+  },
+  {
+    "muscleGroup": "Shoulders",
+    "image": [
+      "https://cdn.shopify.com/s/files/1/1214/5580/files/Muscle_Group_Shoulders.jpg?v=1601051035"
+    ],
+    "exercises": [
+      "Seated Dumbbell Shoulder Press",
+      "Dumbbell Front Raise",
+      "Dumbbell Lateral Raise",
+      "Reverse Pec Deck Fly"
+    ]
+  },
+  {
+    "muscleGroup": "Abdominals",
+    "image": [
+      "https://cdn.shopify.com/s/files/1/1214/5580/files/Muscle_Group_Abs.jpg?v=1601051622"
+    ],
+    "exercises": ["Crunches", "Planks", "Dumbbell Side Bend"]
+  },
+  {
+    "muscleGroup": "Quadriceps",
+    "image": "https://levelsprotein.com/blogs/guides/the-ultimate-muscle-groups-guide#quadriceps",
+    "exercises": [
+      "Barbell Squat",
+      "Leg Extension",
+      "Weighted Lunges",
+      "Leg Press"
+    ]
+  },
+  {
+    "muscleGroup": "Hamstrings",
+    "image": "https://cdn.shopify.com/s/files/1/1214/5580/files/Muscle_Group_hamstrings.jpg?v=1601051184",
+    "exercises": ["Deadlift", "Seated Leg Curl", "Kettle Bell Swing"]
+  },
+  {
+    "muscleGroup": "Calves",
+    "image": "https://cdn.shopify.com/s/files/1/1214/5580/files/Muscle_Group_Calves.jpg?v=1601051316",
+    "exercises": [
+      "Standing Calf Raise",
+      "Calf Extensions",
+      "Single-Leg Calf Raise"
+    ]
+  },
+  {
+    "muscleGroup": "Glutes",
+    "image": "https://cdn.shopify.com/s/files/1/1214/5580/files/Muscle_Group_Glutes.jpg?v=1601050628",
+    "exercises": ["Barbell Glute Bridge", "Barbell Squat", "Weight Split Squat"]
+  },
+  {
+    "muscleGroup": "Forearms",
+    "image": "https://cdn.shopify.com/s/files/1/1214/5580/files/Muscle_Group_Glutes.jpg?v=1601050628",
+    "exercises": [
+      "Dumbbell Wrist Extension",
+      "Dumbbell Reverse Curl",
+      "Upright Dumbbell Row"
+    ]
+  }
+]
