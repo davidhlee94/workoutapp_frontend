@@ -15,13 +15,13 @@
 .mg-muscle {
   padding: 0.2em 0 0.3em 0;
   margin: 0;
-  font-size: 1.2em;
-  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 1em;
+  font-family: "Poppins", sans-serif;
 }
 
 .mg-link {
   text-decoration: none;
-  color: #00cad4;
+  color: #00dbe7;
 }
 
 .mg-container {

@@ -6,6 +6,10 @@
   background-color: #bccbd08a;
 }
 
+.modal {
+  font-family: "Poppins", sans-serif;
+}
+
 .workout-link {
   display: flex;
   justify-content: space-between;
@@ -27,11 +31,14 @@
   align-items: center;
   margin: 0px;
   color: #2193da;
-  font-size: 1.5em;
+  font-size: 1.3em;
+  font-family: "Poppins", sans-serif;
 }
 
 .workoutplan-title {
   margin: 0px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
 }
 
 .bi-trash {
@@ -70,7 +77,7 @@
 
 .workoutplan-text {
   margin: 0;
-  padding-right: 0.7em;
+  padding-right: 0.4em;
 }
 
 .text-and-form {

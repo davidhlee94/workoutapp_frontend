@@ -112,7 +112,7 @@ const WorkoutPlan = () => {
                                     type="text"
                                     value={newForm.collectionName}
                                     name="collectionName"
-                                    placeholder="Workout plan name"
+                                    placeholder="workout plan name"
                                     onChange={handleChange}
                                     className="input-form"
                                 />
@@ -123,7 +123,7 @@ const WorkoutPlan = () => {
                                     type="text"
                                     value={newForm.description}
                                     name="description"
-                                    placeholder="Description"
+                                    placeholder="description"
                                     onChange={handleChange}
                                     className="input-form"
                                 />

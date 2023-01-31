@@ -1,3 +1,11 @@
+.collection-details-container {
+  font-family: "Poppins", sans-serif;
+}
+
+.exercise-modal {
+  font-family: "Poppins", sans-serif;
+}
+
 .collection-title {
   font-size: 2em;
   margin-top: 0.5em;
@@ -55,7 +63,7 @@
 
 .exercise-text {
   margin: 0;
-  padding-right: 0.7em;
+  padding-right: 0.4em;
 }
 
 .exercise-modal {
