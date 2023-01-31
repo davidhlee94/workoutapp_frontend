@@ -6,3 +6,23 @@
 .brand {
   color: #00adb5;
 }
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.brand-icon {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.brand-icon-and-brand {
+  display: flex;
+  flex-direction: row;
+}
+
+.brand {
+  margin-left: 0.4em;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 1.1em;
+}

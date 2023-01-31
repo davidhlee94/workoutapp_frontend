@@ -13,9 +13,10 @@
 }
 
 .mg-muscle {
-  padding: 0.2em 0 0.4em 0;
+  padding: 0.2em 0 0.3em 0;
   margin: 0;
   font-size: 1.2em;
+  font-family: "Alegreya Sans SC", sans-serif;
 }
 
 .mg-link {
@@ -27,4 +28,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
 }

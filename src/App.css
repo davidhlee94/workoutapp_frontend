@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap");
+
 .App {
   text-align: center;
   background-color: #eeeeee;
-  height: 100%;
+  min-height: 100vh;
   padding: 0 5vw 0 5vw;
 }
 

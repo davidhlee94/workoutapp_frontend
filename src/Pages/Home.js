@@ -5,8 +5,8 @@ const Home = () => {
 
     return (
         <div>
-            <h1>Gainzville</h1>
-            <p>Welcome to Gainzville</p>
+            <h1>Gainsville</h1>
+            <p>Welcome to Gainsville</p>
         </div>
     )
 }

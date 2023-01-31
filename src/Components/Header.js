@@ -10,9 +10,10 @@ const Header = () => {
         <div>
             <Navbar className="color-nav sticky-top" expand="lg" expanded={expanded}>
                 <Container>
-                    <Navbar.Brand>
-                        <div>
-                            <div className="brand">Gains +100</div>
+                    <Navbar.Brand as={Link} to="/">
+                        <div className="brand-icon-and-brand">
+                            <img src="https://www.svgrepo.com/show/373467/bicep.svg" className="brand-icon" />
+                            <div className="brand">Gainzville</div>
                         </div>
                     </Navbar.Brand>
                     <Navbar.Toggle
@@ -26,8 +27,8 @@ const Header = () => {
                                 to="/"
                                 className="text-decoration-none navlinks"
                                 onClick={() => setExpanded(false)}>
-                                <div className="link-text">
-                                    Home
+                                <div className="col text-center link-text ">
+                                    HOME
                                 </div>
                             </Nav.Link>
                             <Nav.Link
@@ -35,8 +36,8 @@ const Header = () => {
                                 to="/workoutplan"
                                 className="text-decoration-none navlinks"
                                 onClick={() => setExpanded(false)}>
-                                <div className="link-text">
-                                    Workouts
+                                <div className="col text-center link-text ">
+                                    WORKOUTS
                                 </div>
                             </Nav.Link>
                             <Nav.Link
@@ -44,8 +45,8 @@ const Header = () => {
                                 to="/musclegroups"
                                 className="text-decoration-none navlinks"
                                 onClick={() => setExpanded(false)}>
-                                <div className="link-text">
-                                    Muscle Groups
+                                <div className="col text-center link-text ">
+                                    MUSCLE INFO
                                 </div>
                             </Nav.Link>
                         </Nav>
