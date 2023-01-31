@@ -6,6 +6,7 @@ import "./Header.css"
 
 const Header = () => {
     const [expanded, setExpanded] = useState(false);
+
     return (
         <div>
             <Navbar className="color-nav sticky-top" expand="lg" expanded={expanded}>

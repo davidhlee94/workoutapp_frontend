@@ -40,7 +40,8 @@
   .muscle-exercises {
     display: flex;
     flex-direction: column;
-    width: 40em;
+    max-width: 27vw;
+    margin: 0.5em 0 0 0;
   }
 
   .muscle-name {
@@ -50,12 +51,12 @@
   }
 
   .muscle-description-text {
-    margin: 1em 0 0 0;
+    margin: 1em 0 1em 0;
     font-size: 1.5em;
   }
 
   .muscle-ce {
-    margin: 1em 0 0 0;
+    margin: 1em 0 1em 0;
     font-size: 1.5em;
   }
 
@@ -63,10 +64,35 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
   }
 
   .muscle-description {
-    width: 40em;
+    width: 30em;
+  }
+
+  .mg-blocks-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .muscle-name-image {
+    margin-right: 2em;
+  }
+
+  .muscle-video-d {
+    background-color: rgba(128, 128, 128, 0.198);
+    border-radius: 1em;
+    padding: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .muscle-ce-container {
+    margin-top: 4em;
+  }
+
+  .video {
+    max-width: 27vw;
   }
 }
