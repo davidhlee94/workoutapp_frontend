@@ -1,5 +1,13 @@
 .home-container {
   font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .home-image {
@@ -9,4 +17,8 @@
 .home-title {
   font-family: "Alegreya Sans SC", sans-serif;
   color: #32b0e7;
+}
+
+.home-slogan {
+  color: rgb(61, 61, 61);
 }

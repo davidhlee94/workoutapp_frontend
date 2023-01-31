@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-
+import "./AllMuscles.css"
 const Forearms = () => {
     const [muscle, setMuscle] = useState([])
 
@@ -17,9 +17,9 @@ const Forearms = () => {
         <div className="mg-container">
             {muscle.length > 0 && (
                 <div className="">
-                    <h1 className="">{muscle[5].muscleGroup}</h1>
+                    <h1 className="muscle-name">{muscle[5].muscleGroup}</h1>
                     <img src={muscle[5].image} className="muscle-image" />
-                    <h1>Muscle Description:</h1>
+                    <h1 className="muscle-description-text">Muscle Description:</h1>
                     <p className="muscle-description">{muscle[5].description}</p>
                     <h1>Common Exercises:</h1>
                     <p className="muscle-exercises">{muscle[5].exercises[0]}</p>

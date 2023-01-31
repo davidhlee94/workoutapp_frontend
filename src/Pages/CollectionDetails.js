@@ -139,7 +139,7 @@ const CollectionDetails = () => {
                     <img className="exercise-form-image" src="https://thumbs.gfycat.com/ColdEarnestIndianpangolin.webp" />
                     <div className="exercise-text-and-form">
                         <div className="exercise-input-form">
-                            <p className="exercise-text">Exercise Name:</p>
+                            <p className="exercise-text">Name:</p>
                             <input
                                 type="text"
                                 value={newForm.name}
