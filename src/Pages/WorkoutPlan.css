@@ -1,139 +1,297 @@
-.workout-container {
-  border: 0px;
-  padding: 1em 1em 1em 1em;
-  border-radius: 1em;
-  margin-bottom: 1em;
-  background-color: #bccbd08a;
+/* mobile */
+@media only screen and (max-width: 768px) {
+  .workout-container {
+    border: 0px;
+    padding: 1em 1em 1em 1em;
+    border-radius: 1em;
+    margin-bottom: 1em;
+    background-color: #bccbd08a;
+  }
+
+  .modal {
+    font-family: "Poppins", sans-serif;
+  }
+
+  .workout-link {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    align-items: center;
+    height: 2em;
+  }
+
+  .workoutplan-title-button {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 1em 1em 1em;
+    align-items: center;
+    height: 2em;
+  }
+
+  .collection-name {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    color: #32b0e7;
+    font-size: 1.3em;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .workoutplan-title {
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+  }
+
+  .bi-trash {
+    color: red;
+  }
+
+  .form {
+    height: 60vh;
+  }
+
+  .form-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 60vh;
+  }
+
+  .input-form {
+    height: 2em;
+  }
+
+  .input-button {
+    height: 2em;
+    margin-top: 1em;
+  }
+
+  .workoutplan-form {
+    display: flex;
+    align-items: center;
+    height: 2em;
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 0.5em;
+  }
+
+  .workoutplan-text {
+    margin: 0;
+    padding-right: 0.4em;
+  }
+
+  .text-and-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .form-image {
+    margin-bottom: 1em;
+  }
+
+  .form-title {
+    margin-bottom: 1em;
+  }
+
+  .modal {
+    margin: 45% 0 45% 0;
+  }
+
+  /* Create Button */
+  .input-button {
+    background-color: #0095ff;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.1em;
+    font-weight: 400;
+    margin: 20px;
+    outline: none;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    white-space: nowrap;
+    height: 2em;
+    width: 5em;
+  }
+
+  .input-button:hover,
+  .input-button:focus {
+    background-color: #07c;
+  }
+
+  .input-button:focus {
+    box-shadow: 0 0 0 4px rgba(0, 149, 255, 0.15);
+  }
+
+  .input-button:active {
+    background-color: #0064bd;
+    box-shadow: none;
+  }
 }
 
-.modal {
-  font-family: "Poppins", sans-serif;
-}
+/* web */
+@media only screen and (min-width: 769px) {
+  .workoutplans-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.workout-link {
-  display: flex;
-  justify-content: space-between;
-  text-decoration: none;
-  align-items: center;
-  height: 2em;
-}
+  .workout-container {
+    border: 0px;
+    padding: 1em 1em 1em 1em;
+    border-radius: 1em;
+    margin-bottom: 1em;
+    background-color: #bccbd08a;
+    width: 50em;
+  }
 
-.workoutplan-title-button {
-  display: flex;
-  justify-content: space-between;
-  margin: 1em 1em 1em 1em;
-  align-items: center;
-  height: 2em;
-}
+  .modal {
+    font-family: "Poppins", sans-serif;
+  }
+  .modal-dialog {
+    margin-top: 15em;
+  }
 
-.collection-name {
-  display: flex;
-  align-items: center;
-  margin: 0px;
-  color: #32b0e7;
-  font-size: 1.3em;
-  font-family: "Poppins", sans-serif;
-}
+  .workout-link {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    align-items: center;
+    height: 2em;
+  }
 
-.workoutplan-title {
-  margin: 0px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-}
+  .fade.modal.show {
+    margin: 0;
+    padding: 0;
+  }
 
-.bi-trash {
-  color: red;
-}
+  .workoutplan-title-button {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 1em 1em 1em;
+    align-items: center;
+    width: 48.5em;
+  }
 
-.form {
-  height: 60vh;
-}
+  .collection-name {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    color: #32b0e7;
+    font-size: 1.5em;
+    font-family: "Poppins", sans-serif;
+  }
 
-.form-content {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  height: 60vh;
-}
+  .workoutplan-title {
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+  }
 
-.input-form {
-  height: 2em;
-}
+  .bi-trash {
+    color: red;
+  }
 
-.input-button {
-  height: 2em;
-  margin-top: 1em;
-}
+  .form {
+    height: 40em;
+  }
 
-.workoutplan-form {
-  display: flex;
-  align-items: center;
-  height: 2em;
-  justify-content: flex-end;
-  width: 100%;
-  margin-bottom: 0.5em;
-}
+  .form-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 40em;
+  }
 
-.workoutplan-text {
-  margin: 0;
-  padding-right: 0.4em;
-}
+  .input-form {
+    height: 2em;
+  }
 
-.text-and-form {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
+  .input-button {
+    height: 2em;
+    margin-top: 1em;
+  }
 
-.form-image {
-  margin-bottom: 1em;
-}
+  .workoutplan-form {
+    display: flex;
+    align-items: center;
+    height: 2em;
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 0.5em;
+  }
 
-.form-title {
-  margin-bottom: 1em;
-}
+  .workoutplan-text {
+    margin: 0;
+    padding-right: 0.4em;
+  }
 
-.modal {
-  margin: 45% 0 45% 0;
-}
+  .text-and-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
 
-/* Create Button */
-.input-button {
-  background-color: #0095ff;
-  border: 1px solid transparent;
-  border-radius: 3px;
-  box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0 0 inset;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 1.1em;
-  font-weight: 400;
-  margin: 20px;
-  outline: none;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: baseline;
-  white-space: nowrap;
-  height: 2em;
-  width: 5em;
-}
+  .form-image {
+    margin-bottom: 1em;
+  }
 
-.input-button:hover,
-.input-button:focus {
-  background-color: #07c;
-}
+  .form-title {
+    margin-bottom: 1em;
+  }
 
-.input-button:focus {
-  box-shadow: 0 0 0 4px rgba(0, 149, 255, 0.15);
-}
+  /* Create Button */
+  .input-button {
+    background-color: #0095ff;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.1em;
+    font-weight: 400;
+    margin: 20px;
+    outline: none;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    white-space: nowrap;
+    height: 2em;
+    width: 5em;
+  }
 
-.input-button:active {
-  background-color: #0064bd;
-  box-shadow: none;
+  .input-button:hover,
+  .input-button:focus {
+    background-color: #07c;
+  }
+
+  .input-button:focus {
+    box-shadow: 0 0 0 4px rgba(0, 149, 255, 0.15);
+  }
+
+  .input-button:active {
+    background-color: #0064bd;
+    box-shadow: none;
+  }
 }

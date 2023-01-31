@@ -17,16 +17,19 @@ const MuscleGroups = () => {
 
     return (
         <div className="mg-container">
-            {muscleGroups.map((data) => {
-                return (
-                    <Link to={`/musclegroups/${data.muscleGroup}`} className="mg-link">
-                        <div className="mg-card">
-                            <img src={data.image} className="mg-image" />
-                            <h1 className="mg-muscle">{data.muscleGroup}</h1>
-                        </div>
-                    </Link>
-                )
-            })}
+            <h1 className="mg-title">Muscle Info</h1>
+            <div className="mg-card-container">
+                {muscleGroups.map((data) => {
+                    return (
+                        <Link to={`/musclegroups/${data.muscleGroup}`} className="mg-link">
+                            <div className="mg-card">
+                                <img src={data.image} className="mg-image" />
+                                <h1 className="mg-muscle">{data.muscleGroup}</h1>
+                            </div>
+                        </Link>
+                    )
+                })}
+            </div>
         </div>
     )
 }

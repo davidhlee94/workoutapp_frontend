@@ -1,149 +1,311 @@
-.collection-details-container {
-  font-family: "Poppins", sans-serif;
+/* mobile */
+@media only screen and (max-width: 768px) {
+  .collection-details-container {
+    font-family: "Poppins", sans-serif;
+  }
+
+  .exercise-modal {
+    font-family: "Poppins", sans-serif;
+  }
+
+  .collection-title {
+    font-size: 2em;
+    margin-top: 0.5em;
+    color: #32b0e7;
+    font-weight: 700;
+  }
+
+  .collection-description {
+    font-size: 1em;
+    color: rgb(60, 60, 60);
+  }
+
+  .exercise-container {
+    border: 0px;
+    padding: 0.8em;
+    border-radius: 1em;
+    margin-bottom: 1em;
+    background-color: #bccbd08a;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .exercise-name {
+    margin: 0;
+    font-size: 1.5em;
+  }
+
+  .exercise-name-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .exercise-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .exercise-info-text {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0.5em 0 0 0;
+  }
+
+  .exercise-input-form {
+    display: flex;
+    align-items: center;
+    height: 2em;
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 0.5em;
+  }
+
+  .exercise-text {
+    margin: 0;
+    padding-right: 0.4em;
+  }
+
+  .exercise-modal {
+    margin: 0;
+    padding: 0;
+  }
+
+  .exercise-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .exercise-form-title {
+    margin-bottom: 0.5em;
+  }
+
+  .exercise-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 60vh;
+  }
+
+  .modal {
+    margin: 45% 0 45% 0;
+  }
+
+  .exercise-form-image {
+    width: 90%;
+    height: auto;
+    margin-bottom: 0.7em;
+  }
+
+  .exercise-text-and-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Create Exercise Button */
+  .exercise-input-button {
+    background-color: #0095ff;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.1em;
+    font-weight: 400;
+    margin: 20px;
+    outline: none;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    white-space: nowrap;
+    height: 2em;
+    width: 10em;
+  }
+
+  .exercise-input-button:hover,
+  .exercise-input-button:focus {
+    background-color: #07c;
+  }
+
+  .exercise-input-button:focus {
+    box-shadow: 0 0 0 4px rgba(0, 149, 255, 0.15);
+  }
+
+  .exercise-input-button:active {
+    background-color: #0064bd;
+    box-shadow: none;
+  }
 }
 
-.exercise-modal {
-  font-family: "Poppins", sans-serif;
-}
+/* web */
+@media only screen and (min-width: 769px) {
+  .collection-details-container {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.collection-title {
-  font-size: 2em;
-  margin-top: 0.5em;
-  color: #32b0e7;
-  font-weight: 700;
-}
+  .exercise-modal {
+    font-family: "Poppins", sans-serif;
+  }
 
-.collection-description {
-  font-size: 1em;
-  color: rgb(60, 60, 60);
-}
+  .collection-title {
+    font-size: 2em;
+    margin-top: 0.5em;
+    color: #32b0e7;
+    font-weight: 700;
+  }
 
-.exercise-container {
-  border: 0px;
-  padding: 0.8em;
-  border-radius: 1em;
-  margin-bottom: 1em;
-  background-color: #bccbd08a;
-  display: flex;
-  flex-direction: column;
-}
+  .collection-description {
+    font-size: 1.2em;
+    color: rgb(60, 60, 60);
+  }
 
-.exercise-name {
-  margin: 0;
-  font-size: 1.5em;
-}
+  .exercise-container {
+    border: 0px;
+    padding: 0.8em;
+    border-radius: 1em;
+    margin-bottom: 1em;
+    background-color: #bccbd08a;
+    display: flex;
+    flex-direction: column;
+    width: 50em;
+  }
 
-.exercise-name-button {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
+  .exercise-name {
+    margin: 0;
+    font-size: 1.5em;
+  }
 
-.exercise-info {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
+  .exercise-name-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.exercise-info-text {
-  display: flex;
-  flex-direction: row;
-  padding: 0;
-  margin: 0.5em 0 0 0;
-}
+  .exercise-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 
-.exercise-input-form {
-  display: flex;
-  align-items: center;
-  height: 2em;
-  justify-content: flex-end;
-  width: 100%;
-  margin-bottom: 0.5em;
-}
+  .exercise-info-text {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0.5em 0 0 0;
+  }
 
-.exercise-text {
-  margin: 0;
-  padding-right: 0.4em;
-}
+  .exercise-input-form {
+    display: flex;
+    align-items: center;
+    height: 2em;
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 0.5em;
+  }
 
-.exercise-modal {
-  margin: 0;
-  padding: 0;
-}
+  .exercise-text {
+    margin: 0;
+    padding-right: 0.4em;
+  }
 
-.exercise-form {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
+  .modal-dialog {
+    margin-top: 15em;
+  }
 
-.exercise-form-title {
-  margin-bottom: 0.5em;
-}
+  .exercise-modal {
+    margin: 0;
+    padding: 0;
+  }
 
-.exercise-form {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  height: 60vh;
-}
+  .exercise-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 40em;
+  }
 
-.modal {
-  margin: 45% 0 45% 0;
-}
+  .exercise-form-title {
+    margin-bottom: 0.5em;
+  }
 
-.exercise-form-image {
-  width: 90%;
-  height: auto;
-  margin-bottom: 0.7em;
-}
+  .exercise-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 40em;
+  }
 
-.exercise-text-and-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+  .exercise-form-image {
+    width: 90%;
+    height: auto;
+    margin-bottom: 0.7em;
+  }
 
-/* Create Exercise Button */
-.exercise-input-button {
-  background-color: #0095ff;
-  border: 1px solid transparent;
-  border-radius: 3px;
-  box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0 0 inset;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 1.1em;
-  font-weight: 400;
-  margin: 20px;
-  outline: none;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: baseline;
-  white-space: nowrap;
-  height: 2em;
-  width: 10em;
-}
+  .exercise-text-and-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-.exercise-input-button:hover,
-.exercise-input-button:focus {
-  background-color: #07c;
-}
+  /* Create Exercise Button */
+  .exercise-input-button {
+    background-color: #0095ff;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.1em;
+    font-weight: 400;
+    margin: 20px;
+    outline: none;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    white-space: nowrap;
+    height: 2em;
+    width: 10em;
+  }
 
-.exercise-input-button:focus {
-  box-shadow: 0 0 0 4px rgba(0, 149, 255, 0.15);
-}
+  .exercise-input-button:hover,
+  .exercise-input-button:focus {
+    background-color: #07c;
+  }
 
-.exercise-input-button:active {
-  background-color: #0064bd;
-  box-shadow: none;
+  .exercise-input-button:focus {
+    box-shadow: 0 0 0 4px rgba(0, 149, 255, 0.15);
+  }
+
+  .exercise-input-button:active {
+    background-color: #0064bd;
+    box-shadow: none;
+  }
 }

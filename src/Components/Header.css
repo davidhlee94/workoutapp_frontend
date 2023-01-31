@@ -1,29 +1,76 @@
-.color-nav {
-  background-color: #222831;
+/* mobile */
+@media only screen and (max-width: 768px) {
+  .color-nav {
+    background-color: #222831;
+  }
+
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+  .brand-icon {
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  .brand-icon-and-brand {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .brand {
+    margin-left: 0.4em;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-size: 1.1em;
+    color: #32b0e7;
+  }
+
+  .link-text {
+    font-family: "Poppins", sans-serif;
+    color: white;
+  }
+
+  .right-aligned {
+    justify-content: flex-end;
+  }
 }
 
-.custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
+/* web */
+@media only screen and (min-width: 769px) {
+  .container {
+    max-width: 70em;
+  }
+  .color-nav {
+    background-color: #222831;
+  }
 
-.brand-icon {
-  width: 1.5em;
-  height: 1.5em;
-}
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
 
-.brand-icon-and-brand {
-  display: flex;
-  flex-direction: row;
-}
+  .brand-icon {
+    width: 1.5em;
+    height: 1.5em;
+  }
 
-.brand {
-  margin-left: 0.4em;
-  font-family: "Alegreya Sans SC", sans-serif;
-  font-size: 1.1em;
-  color: #32b0e7;
-}
+  .brand-icon-and-brand {
+    display: flex;
+    flex-direction: row;
+  }
 
-.link-text {
-  font-family: "Poppins", sans-serif;
-  color: white;
+  .brand {
+    margin-left: 0.4em;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-size: 1.1em;
+    color: #32b0e7;
+  }
+
+  .link-text {
+    font-family: "Poppins", sans-serif;
+    color: white;
+  }
+
+  .right-aligned {
+    justify-content: flex-end;
+  }
 }

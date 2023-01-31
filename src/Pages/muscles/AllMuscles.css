@@ -1,24 +1,72 @@
-.mg-container {
-  font-family: "Poppins", sans-serif;
+/* mobile */
+@media only screen and (max-width: 768px) {
+  .mg-container {
+    font-family: "Poppins", sans-serif;
+  }
+
+  .muscle-image {
+    width: 90vw;
+    border-radius: 1em;
+  }
+
+  .muscle-exercises {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .muscle-name {
+    margin: 0.5em;
+    font-weight: 700;
+    font-size: 2.5em;
+  }
+
+  .muscle-description-text {
+    margin: 1em 0 0 0;
+    font-size: 1.5em;
+  }
 }
 
-.muscle-image {
-  width: 90vw;
-  border-radius: 1em;
-}
+/* web */
+@media only screen and (min-width: 769px) {
+  .mg-container {
+    font-family: "Poppins", sans-serif;
+  }
 
-.muscle-exercises {
-  display: flex;
-  flex-direction: column;
-}
+  .muscle-image {
+    width: 30em;
+    border-radius: 1em;
+  }
 
-.muscle-name {
-  margin: 0.5em;
-  font-weight: 700;
-  font-size: 2.5em;
-}
+  .muscle-exercises {
+    display: flex;
+    flex-direction: column;
+    width: 40em;
+  }
 
-.muscle-description-text {
-  margin: 1em 0 0 0;
-  font-size: 1.5em;
+  .muscle-name {
+    margin: 0.5em;
+    font-weight: 700;
+    font-size: 2.5em;
+  }
+
+  .muscle-description-text {
+    margin: 1em 0 0 0;
+    font-size: 1.5em;
+  }
+
+  .muscle-ce {
+    margin: 1em 0 0 0;
+    font-size: 1.5em;
+  }
+
+  .muscle-d-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .muscle-description {
+    width: 40em;
+  }
 }

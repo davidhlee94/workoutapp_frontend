@@ -99,7 +99,7 @@ const WorkoutPlan = () => {
     }, []);
 
     return (
-        <div>
+        <div className="workoutplans-container">
             <Modal show={show} onHide={handleClose} className="modal">
                 <form onSubmit={handleSubmit} className="form" >
                     <div className="form-content">

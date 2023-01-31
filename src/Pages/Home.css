@@ -1,24 +1,57 @@
-.home-container {
-  font-family: "Poppins", sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+/* mobile */
+@media only screen and (max-width: 768px) {
+  .home-container {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .home-image {
+    width: 5em;
+  }
+
+  .home-title {
+    font-family: "Alegreya Sans SC", sans-serif;
+    color: #32b0e7;
+  }
+
+  .home-slogan {
+    color: rgb(61, 61, 61);
+  }
 }
 
-.home-image {
-  width: 5em;
-}
+/* web */
+@media only screen and (min-width: 769px) {
+  .home-container {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
-.home-title {
-  font-family: "Alegreya Sans SC", sans-serif;
-  color: #32b0e7;
-}
+  .home-image {
+    width: 9em;
+  }
 
-.home-slogan {
-  color: rgb(61, 61, 61);
+  .home-title {
+    font-family: "Alegreya Sans SC", sans-serif;
+    color: #32b0e7;
+    font-size: 5em;
+  }
+
+  .home-slogan {
+    color: rgb(61, 61, 61);
+    font-size: 1em;
+  }
 }
