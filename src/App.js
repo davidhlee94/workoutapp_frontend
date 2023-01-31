@@ -20,25 +20,27 @@ import Triceps from './Pages/muscles/Triceps';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app-container">
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/workoutplan" element={<WorkoutPlan />} />
-        <Route path="/collection/:id" element={<CollectionDetails />} />
-        <Route path="/musclegroups" element={<MuscleGroups />} />
-        <Route path="musclegroups/abdonimals" element={<Abs />} />
-        <Route path="musclegroups/back" element={<Back />} />
-        <Route path="musclegroups/biceps" element={<Biceps />} />
-        <Route path="musclegroups/calves" element={<Calves />} />
-        <Route path="musclegroups/chest" element={<Chest />} />
-        <Route path="musclegroups/forearms" element={<Forearms />} />
-        <Route path="musclegroups/glutes" element={<Glutes />} />
-        <Route path="musclegroups/hamstrings" element={<Ham />} />
-        <Route path="musclegroups/quadriceps" element={<Quad />} />
-        <Route path="musclegroups/shoulders" element={<Shoulders />} />
-        <Route path="musclegroups/triceps" element={<Triceps />} />
-      </Routes>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/workoutplan" element={<WorkoutPlan />} />
+          <Route path="/collection/:id" element={<CollectionDetails />} />
+          <Route path="/musclegroups" element={<MuscleGroups />} />
+          <Route path="/musclegroups/Abdominals" element={<Abs />} />
+          <Route path="/musclegroups/back" element={<Back />} />
+          <Route path="/musclegroups/biceps" element={<Biceps />} />
+          <Route path="/musclegroups/calves" element={<Calves />} />
+          <Route path="/musclegroups/chest" element={<Chest />} />
+          <Route path="/musclegroups/forearms" element={<Forearms />} />
+          <Route path="/musclegroups/glutes" element={<Glutes />} />
+          <Route path="/musclegroups/hamstrings" element={<Ham />} />
+          <Route path="/musclegroups/quadriceps" element={<Quad />} />
+          <Route path="/musclegroups/shoulders" element={<Shoulders />} />
+          <Route path="/musclegroups/triceps" element={<Triceps />} />
+        </Routes>
+      </div>
     </div>
   );
 }

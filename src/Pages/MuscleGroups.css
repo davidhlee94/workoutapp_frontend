@@ -1,0 +1,30 @@
+.mg-image {
+  width: 42vw;
+  height: auto;
+  border-radius: 1em 1em 0 0;
+}
+
+.mg-card {
+  background-color: #4b515a;
+  border-radius: 1em;
+  border: 0;
+  width: 42vw;
+  margin: 0.3em;
+}
+
+.mg-muscle {
+  padding: 0.2em 0 0.4em 0;
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.mg-link {
+  text-decoration: none;
+  color: #00cad4;
+}
+
+.mg-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

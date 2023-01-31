@@ -1,0 +1,8 @@
+.muscle-image {
+  width: 90vw;
+}
+
+.muscle-exercises {
+  display: flex;
+  flex-direction: column;
+}

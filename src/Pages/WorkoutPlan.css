@@ -39,7 +39,7 @@
 }
 
 .form {
-  height: 50vh;
+  height: 60vh;
 }
 
 .form-content {
@@ -47,7 +47,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  height: 50vh;
+  height: 60vh;
 }
 
 .input-form {
@@ -70,7 +70,7 @@
 
 .workoutplan-text {
   margin: 0;
-  padding-right: 1em;
+  padding-right: 0.7em;
 }
 
 .text-and-form {
@@ -85,4 +85,48 @@
 
 .form-title {
   margin-bottom: 1em;
+}
+
+.modal {
+  margin: 45% 0 45% 0;
+}
+
+/* Create Button */
+.input-button {
+  background-color: #0095ff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.1em;
+  font-weight: 400;
+  margin: 20px;
+  outline: none;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+  height: 2em;
+  width: 5em;
+}
+
+.input-button:hover,
+.input-button:focus {
+  background-color: #07c;
+}
+
+.input-button:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, 0.15);
+}
+
+.input-button:active {
+  background-color: #0064bd;
+  box-shadow: none;
 }

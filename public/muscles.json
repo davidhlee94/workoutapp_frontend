@@ -1,34 +1,84 @@
 [
   {
-    "muscleGroup": "Chest",
-    "image": [
-      "https://cdn.shopify.com/s/files/1/1214/5580/files/Muscle_Group_Chest.jpg?v=1601050935"
+    "muscleGroup": "Abdominals",
+    "image": "https://cdn.shopify.com/s/files/1/1214/5580/files/Muscle_Group_Abs.jpg?v=1601051622",
+    "exercises": ["Crunches", "Planks", "Dumbbell Side Bend"],
+    "description": "The abdominal muscles, commonly referred to as the abs, are a group of muscles located in the front of the torso that play a key role in supporting the spine and assisting with movements such as bending and twisting. The most well-known abdominal muscle is the rectus abdominis, which creates the 'six-pack' appearance when developed. To exercise the abs, a variety of exercises can be performed such as crunches, sit-ups, planks, Russian twists, and bicycle crunches. These exercises can be done with or without equipment and can be incorporated into a full-body workout routine or done as a separate ab workout. It's important to remember to engage the core and maintain proper form to avoid injury and effectively target the abs."
+  },
+  {
+    "muscleGroup": "Back",
+    "image": "https://cdn.shopify.com/s/files/1/1214/5580/files/Muscle_Group_Back.jpg?v=1601050704",
+    "exercises": [
+      "Pull-ups: A great compound exercise that targets the lats, rhomboids, and traps.",
+      "Dumbbell Rows: This exercise isolates the lats and rhomboids and helps to build upper back strength.",
+      "Lat Pulldowns: This machine exercise is a good alternative to pull-ups and focuses on the lats.",
+      "Barbell Deadlifts: This compound exercise targets the entire back, including the erector spinae and traps, as well as the legs, glutes, and core.",
+      "Seated Cable Rows: A back exercise that helps to strengthen the rhomboids, traps, and lats."
     ],
+    "description": "The back muscles are a large group of muscles responsible for supporting the spine, facilitating movement, and maintaining good posture. Some of the key muscles in the back include the latissimus dorsi (lats), rhomboids, trapezius (traps), and erector spinae."
+  },
+  {
+    "muscleGroup": "Biceps",
+    "image": "https://cdn.shopify.com/s/files/1/1214/5580/files/Muscle_Group_Biceps.jpg?v=1601051495",
+    "exercises": [
+      "Bicep curls - using dumbbells or a barbell, lift the weight up towards the shoulders and then lower it back down.",
+      "Chin-ups - grasp a chin-up bar with palms facing towards you and pull yourself up towards the bar.",
+      "Hammer curls - using dumbbells, curl the weights up and down while keeping your palms facing each other.",
+      "Concentration curls - sit on a bench and hold a dumbbell with one arm, bending your arm at the elbow to bring the weight towards your shoulder and then lower it back down."
+    ],
+    "description": "The biceps, located in the front part of the upper arm, are one of the most commonly worked out muscle groups. The primary function of the biceps is to bend the arm at the elbow and assist with shoulder movements."
+  },
+  {
+    "muscleGroup": "Calves",
+    "image": "https://cdn.shopify.com/s/files/1/1214/5580/files/Muscle_Group_Calves.jpg?v=1601051316",
+    "exercises": [
+      "Standing Calf Raise",
+      "Calf Extensions",
+      "Single-Leg Calf Raise"
+    ],
+    "description": ""
+  },
+  {
+    "muscleGroup": "Chest",
+    "image": "https://cdn.shopify.com/s/files/1/1214/5580/files/Muscle_Group_Chest.jpg?v=1601050935",
     "exercises": [
       "Push ups",
       "Barbell Bench Press",
       "Pec Fly",
       "Dumbbell Incline Bench Press",
       "Cable Fly"
-    ]
-  },
-  {
-    "muscleGroup": "Back",
-    "image": [
-      "https://cdn.shopify.com/s/files/1/1214/5580/files/Muscle_Group_Back.jpg?v=1601050704"
     ],
-    "exercises": [
-      "Pull ups",
-      "T-Bar Row",
-      "Lat Pull Down",
-      "Deadlift",
-      "Bent Over Row"
-    ]
+    "description": ""
   },
   {
-    "muscleGroup": "Biceps",
-    "image": "https://cdn.shopify.com/s/files/1/1214/5580/files/Muscle_Group_Biceps.jpg?v=1601051495",
-    "exercises": ["Cable Curl", "Dumbbell Curl", "Hammer Curl", "Preacher Curl"]
+    "muscleGroup": "Forearms",
+    "image": "https://cdn.shopify.com/s/files/1/1214/5580/files/Muscle_Group_Glutes.jpg?v=1601050628",
+    "exercises": [
+      "Dumbbell Wrist Extension",
+      "Dumbbell Reverse Curl",
+      "Upright Dumbbell Row"
+    ],
+    "description": ""
+  },
+  {
+    "muscleGroup": "Glutes",
+    "image": "https://cdn.shopify.com/s/files/1/1214/5580/files/Muscle_Group_Glutes.jpg?v=1601050628",
+    "exercises": ["Barbell Glute Bridge", "Barbell Squat", "Weight Split Squat"]
+  },
+  {
+    "muscleGroup": "Hamstrings",
+    "image": "https://cdn.shopify.com/s/files/1/1214/5580/files/Muscle_Group_hamstrings.jpg?v=1601051184",
+    "exercises": ["Deadlift", "Seated Leg Curl", "Kettle Bell Swing"]
+  },
+  {
+    "muscleGroup": "Shoulders",
+    "image": "https://cdn.shopify.com/s/files/1/1214/5580/files/Muscle_Group_Shoulders.jpg?v=1601051035",
+    "exercises": [
+      "Seated Dumbbell Shoulder Press",
+      "Dumbbell Front Raise",
+      "Dumbbell Lateral Raise",
+      "Reverse Pec Deck Fly"
+    ]
   },
   {
     "muscleGroup": "Triceps",
@@ -41,60 +91,13 @@
     ]
   },
   {
-    "muscleGroup": "Shoulders",
-    "image": [
-      "https://cdn.shopify.com/s/files/1/1214/5580/files/Muscle_Group_Shoulders.jpg?v=1601051035"
-    ],
-    "exercises": [
-      "Seated Dumbbell Shoulder Press",
-      "Dumbbell Front Raise",
-      "Dumbbell Lateral Raise",
-      "Reverse Pec Deck Fly"
-    ]
-  },
-  {
-    "muscleGroup": "Abdominals",
-    "image": [
-      "https://cdn.shopify.com/s/files/1/1214/5580/files/Muscle_Group_Abs.jpg?v=1601051622"
-    ],
-    "exercises": ["Crunches", "Planks", "Dumbbell Side Bend"]
-  },
-  {
     "muscleGroup": "Quadriceps",
-    "image": "https://levelsprotein.com/blogs/guides/the-ultimate-muscle-groups-guide#quadriceps",
+    "image": "https://cdn.shopify.com/s/files/1/1214/5580/files/Muscle_Group_Quadriceps.jpg?v=1601051118",
     "exercises": [
       "Barbell Squat",
       "Leg Extension",
       "Weighted Lunges",
       "Leg Press"
-    ]
-  },
-  {
-    "muscleGroup": "Hamstrings",
-    "image": "https://cdn.shopify.com/s/files/1/1214/5580/files/Muscle_Group_hamstrings.jpg?v=1601051184",
-    "exercises": ["Deadlift", "Seated Leg Curl", "Kettle Bell Swing"]
-  },
-  {
-    "muscleGroup": "Calves",
-    "image": "https://cdn.shopify.com/s/files/1/1214/5580/files/Muscle_Group_Calves.jpg?v=1601051316",
-    "exercises": [
-      "Standing Calf Raise",
-      "Calf Extensions",
-      "Single-Leg Calf Raise"
-    ]
-  },
-  {
-    "muscleGroup": "Glutes",
-    "image": "https://cdn.shopify.com/s/files/1/1214/5580/files/Muscle_Group_Glutes.jpg?v=1601050628",
-    "exercises": ["Barbell Glute Bridge", "Barbell Squat", "Weight Split Squat"]
-  },
-  {
-    "muscleGroup": "Forearms",
-    "image": "https://cdn.shopify.com/s/files/1/1214/5580/files/Muscle_Group_Glutes.jpg?v=1601050628",
-    "exercises": [
-      "Dumbbell Wrist Extension",
-      "Dumbbell Reverse Curl",
-      "Upright Dumbbell Row"
     ]
   }
 ]

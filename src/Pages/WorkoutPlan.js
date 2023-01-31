@@ -100,9 +100,8 @@ const WorkoutPlan = () => {
 
     return (
         <div>
-
-            <Modal show={show} onHide={handleClose}>
-                <form onSubmit={handleSubmit} className="form">
+            <Modal show={show} onHide={handleClose} className="modal">
+                <form onSubmit={handleSubmit} className="form" >
                     <div className="form-content">
                         <h1 className="form-title">Create a Workout Plan</h1>
                         <img className="form-image" src="https://media4.giphy.com/media/g37mGHexrv5ug/giphy.gif?cid=ecf05e47rx2e0lxjlaxhqst16u7d9oklksn4557odwgj1yd9&rid=giphy.gif&ct=g" />

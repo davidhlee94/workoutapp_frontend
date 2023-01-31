@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import React from "react";
 import { Modal } from "react-bootstrap";
+import "./CollectionDetails.css"
 
 const CollectionDetails = () => {
     const { id } = useParams();
@@ -100,15 +101,24 @@ const CollectionDetails = () => {
 
     return (
         <>
-            <h1>{collection.collectionName}</h1>
-            <h1>{collection.description}</h1>
+            <h1 className="collection-title">{collection.collectionName}</h1>
+            <h1 className="collection-description">{collection.description}</h1>
             {exercises ? (
                 exercises.filter(exercise => exercise).map(exercise => (
-                    <div key={exercise._id}>
-                        <p>{exercise.name}</p>
-                        <p>{exercise.sets} sets</p>
-                        <p>{exercise.reps} reps</p>
-                        <p>{exercise.weight} lbs</p>
+                    <div key={exercise._id} className="exercise-container">
+                        <div className="exercise-name-button">
+                            <h1 className="exercise-name">{exercise.name}</h1>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
+                                <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" onClick={() => {
+                                    deleteExercise(exercise._id)
+                                }} /></svg>
+                        </div>
+                        <div className="exercise-info">
+                            <p className="exercise-info-text">Sets: {exercise.sets}</p>
+                            <p className="exercise-info-text">Reps: {exercise.reps}</p>
+                            <p className="exercise-info-text">Weight: {exercise.weight} lbs</p>
+                        </div>
                     </div>
                 ))
             ) : (
@@ -121,43 +131,56 @@ const CollectionDetails = () => {
                     handleShow()
                 }}
             />
-            <Modal show={show} onHide={handleClose}>
-                <form onSubmit={handleSubmit}>
-                    <p>Exercise Name:</p>
-                    <input
-                        type="text"
-                        value={newForm.name}
-                        name="name"
-                        placeholder="exercise name"
-                        onChange={handleChange}
-                    />
-                    <p>Sets: </p>
-                    <input
-                        type="text"
-                        value={newForm.sets}
-                        name="sets"
-                        placeholder="number of sets"
-                        onChange={handleChange}
-                    />
-                    <p>Reps:</p>
-                    <input
-                        type="text"
-                        value={newForm.reps}
-                        name="reps"
-                        placeholder="numbers of reps"
-                        onChange={handleChange}
-                    />
-                    <p>Weight:</p>
-                    <input
-                        type="text"
-                        value={newForm.weight}
-                        name="weight"
-                        placeholder="weight in lbs"
-                        onChange={handleChange}
-                    />
+            <Modal show={show} onHide={handleClose} className="exercise-modal">
+                <form onSubmit={handleSubmit} className="exercise-form">
+                    <h1 className="exercise-form-title">Add an Exercise</h1>
+                    <img className="exercise-form-image" src="https://thumbs.gfycat.com/ColdEarnestIndianpangolin.webp" />
+                    <div className="exercise-text-and-form">
+                        <div className="exercise-input-form">
+                            <p className="exercise-text">Exercise Name:</p>
+                            <input
+                                type="text"
+                                value={newForm.name}
+                                name="name"
+                                placeholder="exercise name"
+                                onChange={handleChange}
+                            />
+                        </div>
+                        <div className="exercise-input-form">
+                            <p className="exercise-text">Sets: </p>
+                            <input
+                                type="text"
+                                value={newForm.sets}
+                                name="sets"
+                                placeholder="number of sets"
+                                onChange={handleChange}
+                            />
+                        </div>
+                        <div className="exercise-input-form">
+                            <p className="exercise-text">Reps:</p>
+                            <input
+                                type="text"
+                                value={newForm.reps}
+                                name="reps"
+                                placeholder="numbers of reps"
+                                onChange={handleChange}
+                            />
+                        </div>
+                        <div className="exercise-input-form">
+                            <p className="exercise-text">Weight:</p>
+                            <input
+                                type="text"
+                                value={newForm.weight}
+                                name="weight"
+                                placeholder="weight in lbs"
+                                onChange={handleChange}
+                            />
+                        </div>
+                    </div>
                     <input
                         type="submit"
                         value="Create exercise"
+                        className="exercise-input-button"
                     />
                 </form>
             </Modal>
