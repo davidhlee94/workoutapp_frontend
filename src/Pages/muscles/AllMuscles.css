@@ -12,17 +12,64 @@
   .muscle-exercises {
     display: flex;
     flex-direction: column;
+    max-width: 90vw;
+    margin: 0.5em 0 0 0;
   }
 
   .muscle-name {
     margin: 0.5em;
     font-weight: 700;
     font-size: 2.5em;
+    width: 90vw;
   }
 
   .muscle-description-text {
-    margin: 1em 0 0 0;
+    margin: 1em 0 1em 0;
     font-size: 1.5em;
+  }
+
+  .muscle-ce {
+    margin: 0.5em 0 0.5em 0;
+    font-size: 1.5em;
+    width: 90vw;
+  }
+
+  .muscle-d-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 90vw;
+  }
+
+  .muscle-description {
+    width: 90vw;
+  }
+
+  .mg-blocks-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .muscle-name-image {
+    margin-right: 2em;
+  }
+
+  .muscle-video-d {
+    background-color: rgba(128, 128, 128, 0.198);
+    border-radius: 1em;
+    padding: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90vw;
+  }
+
+  .muscle-ce-container {
+    margin-top: 1em;
+  }
+
+  .video {
+    max-width: 90vw;
   }
 }
 
