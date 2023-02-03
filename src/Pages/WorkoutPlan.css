@@ -78,7 +78,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 60vh;
+    height: 80vh;
     padding: 0 2em 0 2em;
   }
 
@@ -142,7 +142,7 @@
     vertical-align: baseline;
     white-space: nowrap;
     height: 2em;
-    width: 5em;
+    padding: 0 1em 0 1em;
   }
 
   .input-button:hover,
