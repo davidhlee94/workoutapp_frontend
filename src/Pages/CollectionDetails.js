@@ -138,6 +138,7 @@ const CollectionDetails = () => {
                         <div className="exercise-input-form">
                             <p className="exercise-text">Name:</p>
                             <input
+                                className="input"
                                 type="text"
                                 value={newForm.name}
                                 name="name"
@@ -148,6 +149,7 @@ const CollectionDetails = () => {
                         <div className="exercise-input-form">
                             <p className="exercise-text">Sets: </p>
                             <input
+                                className="input"
                                 type="text"
                                 value={newForm.sets}
                                 name="sets"
@@ -158,6 +160,7 @@ const CollectionDetails = () => {
                         <div className="exercise-input-form">
                             <p className="exercise-text">Reps:</p>
                             <input
+                                className="input"
                                 type="text"
                                 value={newForm.reps}
                                 name="reps"
@@ -168,6 +171,7 @@ const CollectionDetails = () => {
                         <div className="exercise-input-form">
                             <p className="exercise-text">Weight:</p>
                             <input
+                                className="input"
                                 type="text"
                                 value={newForm.weight}
                                 name="weight"
@@ -178,6 +182,7 @@ const CollectionDetails = () => {
                         <div className="exercise-input-form">
                             <p className="exercise-text">Notes:</p>
                             <input
+                                className="input"
                                 type="text"
                                 value={newForm.notes}
                                 name="notes"

@@ -53,6 +53,10 @@
     align-items: center;
   }
 
+  .input.input {
+    width: 50vw;
+  }
+
   .exercise-info {
     display: flex;
     flex-direction: row;
@@ -209,6 +213,10 @@
   .collection-description {
     font-size: 1.2em;
     color: rgb(60, 60, 60);
+  }
+
+  .input.input {
+    width: 20em;
   }
 
   .exercise-container {
