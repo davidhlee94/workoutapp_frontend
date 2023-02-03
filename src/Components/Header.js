@@ -33,8 +33,8 @@ const Header = () => {
                 </div>)
         } else {
             setMessage(
-                < div class="alert alert-danger" role="alert" >
-                    You have successfully logged out.
+                < div class="alert alert-warning" role="alert" >
+                    Log in to use the workout plan.
                 </div >
             )
         }
