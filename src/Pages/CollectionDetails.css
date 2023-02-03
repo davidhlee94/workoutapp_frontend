@@ -114,6 +114,7 @@
     flex-direction: column;
     align-items: center;
     height: 80vh;
+    padding: 0 1em 0 1em;
   }
 
   .exercise-form-image {
