@@ -3,8 +3,12 @@ import "./AllMuscles.css"
 import { useParams } from "react-router-dom";
 
 const AllMuscles = (params) => {
+    // **CONSTANTS**
     const [muscles, setMuscle] = useState([])
     const { name } = useParams()
+
+
+    // **FUNCTIONS THAT GRABS ALL MUSCLEDATA FROM LOCAL JSON AND PUTS IT INTO AN ARRAY**
     const getMuscleData = async () => {
         const response = await fetch("/muscles.json");
         const data = await response.json();
@@ -18,7 +22,7 @@ const AllMuscles = (params) => {
     console.log(name)
 
 
-
+    // **USEEFFECT THAT RUNS GETCOLLECTIONS, THAT TRACKS THE STATE OF SHOW**
     useEffect(() => {
         getMuscleData()
     }, [])

@@ -2,14 +2,18 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./MuscleGroups.css"
 const MuscleGroups = () => {
+
+    // **CONSTANTS**
     const [muscleGroups, setMuscleGroups] = useState([])
 
+    // **FETCHING MUSCLE DATA FROM LOCAL JSON**
     const getMuscleData = async () => {
         const response = await fetch("/muscles.json");
         const data = await response.json();
         setMuscleGroups(data)
     }
 
+    // **USEEFFECT THAT RUNS GETMUSCLEDATA**
     useEffect(() => {
         getMuscleData();
     }, [])

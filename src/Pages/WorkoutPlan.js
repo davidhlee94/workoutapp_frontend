@@ -6,13 +6,16 @@ import { getUserToken } from "../utils/authToken";
 import { UserContext } from "../data";
 
 const WorkoutPlan = () => {
-    const URL = "http://localhost:4000/collection";
+
+    // **CONSTANTS**
+    const URL = "https://workoutapp-backend.herokuapp.com/collection";
     const [collection, setCollection] = useState([]);
     const [show, setShow] = useState(false);
     const token = getUserToken()
     const currentUser = useContext(UserContext)
     const currentUserID = currentUser.user._id
-    console.log(currentUserID)
+
+    // **HANDLE SHOW AND CLOSE FOR THE MODALS**
     const handleClose = () => {
         setShow(false);
     }
@@ -23,7 +26,7 @@ const WorkoutPlan = () => {
         exercises: []
     });
 
-
+    // **FUNCTION FETCHING ALL WORKOUT COLLECTIONS**
     const getCollections = async () => {
         try {
             const response = await fetch(URL);
@@ -36,9 +39,10 @@ const WorkoutPlan = () => {
         }
     }
 
+    // **FUNCTION TO CREATE A WORKOUT PLAN - POST TO DATEBASE**
     const createWorkoutPlan = async (workoutData) => {
         try {
-            await fetch(`http://localhost:4000/collection`, {
+            await fetch(`https://workoutapp-backend.herokuapp.com/collection`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -52,7 +56,7 @@ const WorkoutPlan = () => {
         }
     }
 
-
+    // **FUNCTION TO DELETE A WORKOUT PLAN - DELETE FROM DATEBASE**
     const deleteWorkoutPlan = async (id) => {
         try {
             const options = {
@@ -61,7 +65,7 @@ const WorkoutPlan = () => {
                     "Authorization": `Bearer ${token}`
                 }
             };
-            const response = await fetch(`http://localhost:4000/collection/${id}`, options);
+            const response = await fetch(`https://workoutapp-backend.herokuapp.com/collection/${id}`, options);
             const deletedWorkout = await response.json();
             getCollections();
         } catch (error) {
@@ -70,6 +74,7 @@ const WorkoutPlan = () => {
     };
 
 
+    // **FUNCTION TO MAP THROUGH WORKOUT COLLECTIONS AND DISPLAY**
     const loaded = () => {
         return collection.map((collections) => (
             <div key={collections._id} className="workout-container">
@@ -91,10 +96,12 @@ const WorkoutPlan = () => {
     }
 
 
+    // **HANDLECHANGE THAT FILLS NEW FORM WITH INFO**
     const handleChange = (e) => {
         setNewForm({ ...newForm, [e.target.name]: e.target.value });
     };
 
+    // **SUBMITTING INFO INTO NEW FORM**
     const handleSubmit = async (e) => {
         e.preventDefault();
         const currentState = { ...newForm };
@@ -107,6 +114,8 @@ const WorkoutPlan = () => {
         handleClose();
     };
 
+
+    // **USEEFFECT THAT RUNS GETCOLLECTIONS, THAT TRACKS THE STATE OF SHOW**
     useEffect(() => {
         getCollections();
     }, [show]);
@@ -117,10 +126,6 @@ const WorkoutPlan = () => {
                 <form onSubmit={handleSubmit} className="form" >
                     <div className="form-content">
                         <h1 className="form-title">Create a Workout Plan</h1>
-                        {!currentUserID && <><h3 className="modal-text">⚠️You are not signed in!⚠️</h3>
-                            <Link to={"/auth"}>
-                                <p className="modal-text">Sign in here.</p></Link></>}
-
                         <img className="form-image" src="https://media4.giphy.com/media/g37mGHexrv5ug/giphy.gif?cid=ecf05e47rx2e0lxjlaxhqst16u7d9oklksn4557odwgj1yd9&rid=giphy.gif&ct=g" />
                         {currentUserID && <><div className="text-and-form">
                             <div className="workoutplan-form">
@@ -164,7 +169,6 @@ const WorkoutPlan = () => {
                         }} />
                 </svg>
             </div>
-
             {collection ? loaded() : loading()
             }
         </div>

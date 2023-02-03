@@ -7,15 +7,16 @@ import { getUserToken } from "../utils/authToken";
 import { clearUserToken } from "../utils/authToken";
 import { useContext } from "react";
 import { UserContext } from "../data";
-import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 
 const Header = () => {
+    // **CONSTANTS**
     const [expanded, setExpanded] = useState(false);
     const [message, setMessage] = useState("")
     const token = getUserToken()
     const { setAuth, setUser, user } = useContext(UserContext)
 
+    // **LOGS THE USER OUT**
     const logoutUser = () => {
         clearUserToken();
         setAuth(false);
@@ -23,8 +24,8 @@ const Header = () => {
         window.localStorage.clear()
     };
 
+    // **USEEFFECT THAT CHECK TO SEE IF USER OBJECT IS FILLED TO DISPLAY MESSAGE, TRACKS CHANGE IN USER**
     useEffect(() => {
-        console.log("user changed", user)
         if (user.username) {
             setMessage(
                 <div class="alert alert-success" role="alert">
@@ -67,6 +68,15 @@ const Header = () => {
                                     onClick={() => setExpanded(false)}>
                                     <div className="col text-center link-text ">
                                         HOME
+                                    </div>
+                                </Nav.Link>
+                                <Nav.Link
+                                    as={Link}
+                                    to="/about"
+                                    className="text-decoration-none navlinks"
+                                    onClick={() => setExpanded(false)}>
+                                    <div className="col text-center link-text ">
+                                        ABOUT
                                     </div>
                                 </Nav.Link>
                                 {user.username &&

@@ -1,0 +1,19 @@
+.about-header {
+  font-weight: 700;
+  margin: 1em 0 1em 0;
+}
+
+.about-container {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  width: 50em;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+}

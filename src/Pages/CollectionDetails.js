@@ -5,20 +5,24 @@ import { Modal } from "react-bootstrap";
 import "./CollectionDetails.css"
 
 const CollectionDetails = () => {
+    // **CONSTANTS**
     const { id } = useParams();
     const [newForm, setNewForm] = useState({
         name: "",
         reps: "",
         sets: "",
         weight: "",
+        notes: ""
     });
     const [collection, setCollection] = useState([])
     const [show, setShow] = useState(false);
+    const CollectionURL = `https://workoutapp-backend.herokuapp.com/collection/${id}`
+
+    // **HANDLE SHOW AND CLOSE FOR THE MODALS**
     const handleClose = () => {
         setShow(false);
     }
     const handleShow = () => setShow(true);
-    const CollectionURL = `http://localhost:4000/collection/${id}`
 
     const getCollectionData = async () => {
         try {
@@ -30,10 +34,10 @@ const CollectionDetails = () => {
         }
     }
 
-
+    // **FUNCTION TO CREATE EXERCISES - PUT WORKOUT COLLECTIONS**
     async function createExercise(exerciseData) {
         try {
-            await fetch(`http://localhost:4000/collection/${id}/add-exercise`, {
+            await fetch(`https://workoutapp-backend.herokuapp.com/collection/${id}/add-exercise`, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json"
@@ -46,12 +50,13 @@ const CollectionDetails = () => {
         }
     }
 
+    // **FUNCTION TO DELETE EXERCISES - DELETE EXERCISES FROM WORKOUT COLLECTIONS**
     const deleteExercise = async (id) => {
         try {
             const options = {
                 method: "DELETE"
             };
-            const response = await fetch(`http://localhost:4000/exercise/${id}`, options);
+            const response = await fetch(`https://workoutapp-backend.herokuapp.com/exercise/${id}`, options);
             const deletedExercise = await response.json();
             getCollectionData()
         } catch (error) {
@@ -59,19 +64,21 @@ const CollectionDetails = () => {
         }
     }
 
+    // **HANDLECHANGE THAT FILLS NEW FORM WITH INFO**
     const handleChange = (e) => {
         setNewForm({ ...newForm, [e.target.name]: e.target.value });
     };
 
+    // **SUBMITTING INFO INTO NEW FORM**
     const handleSubmit = async (e) => {
         e.preventDefault();
         const currentState = { ...newForm };
         createExercise(currentState);
-        setNewForm({ name: "", reps: "", sets: "", weight: "" });
+        setNewForm({ name: "", reps: "", sets: "", weight: "", notes: "" });
         handleClose();
     };
 
-
+    // **USEEFFECT THAT RUNS GETCOLLECTIONSDATA**
     useEffect(() => {
         getCollectionData();
     }, []);
@@ -94,16 +101,28 @@ const CollectionDetails = () => {
                             </button>
                         </div>
                         <div className="exercise-info">
-                            <p className="exercise-info-text">Sets: {exercise.sets}</p>
-                            <p className="exercise-info-text">Reps: {exercise.reps}</p>
-                            <p className="exercise-info-text">Weight: {exercise.weight} lbs</p>
+                            <div className="exercise-info-row">
+                                <p className="exercise-info-text exercise-info-text-title">Sets:</p>
+                                <p className="exercise-info-text">{exercise.sets}</p>
+                            </div>
+                            <div className="exercise-info-row">
+                                <p className="exercise-info-text exercise-info-text-title">Reps:</p>
+                                <p className="exercise-info-text">{exercise.reps}</p>
+                            </div>
+                            <div className="exercise-info-row">
+                                <p className="exercise-info-text exercise-info-text-title">Weight:</p>
+                                <p className="exercise-info-text">{exercise.weight} lbs</p>
+                            </div>
+                        </div>
+                        <div className="notes-container">
+                            <p className="notes">{exercise.notes}</p>
                         </div>
                     </div>
                 ))
             ) : (
                 <p>Loading exercises...</p>
             )}
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" className="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" className="bi bi-plus-circle-fill add-exercise" viewBox="0 0 16 16">
                 <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z" type="submit"
                     value="Add an exercise"
                     onClick={() => {
@@ -153,6 +172,16 @@ const CollectionDetails = () => {
                                 value={newForm.weight}
                                 name="weight"
                                 placeholder="weight in lbs"
+                                onChange={handleChange}
+                            />
+                        </div>
+                        <div className="exercise-input-form">
+                            <p className="exercise-text">Notes:</p>
+                            <input
+                                type="text"
+                                value={newForm.notes}
+                                name="notes"
+                                placeholder="notes"
                                 onChange={handleChange}
                             />
                         </div>

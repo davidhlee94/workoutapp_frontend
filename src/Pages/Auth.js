@@ -8,11 +8,14 @@ import "./Auth.css"
 import { Modal } from "react-bootstrap";
 import { useState } from "react";
 
-// src/pages/Auth.jsx
 
 function Auth(props) {
+    // **CONSTANTS**
     const [showS, setShowS] = useState(false);
     const [showL, setShowL] = useState(false);
+    const { setAuth, setUser } = useContext(UserContext)
+
+    // **HANDLE SHOW AND CLOSE FOR THE MODALS**
     const handleShowS = () => setShowS(true);
     const handleShowL = () => setShowL(true);
     const handleCloseS = () => {
@@ -21,14 +24,10 @@ function Auth(props) {
     const handleCloseL = () => {
         setShowL(false);
     }
-    const navigate = useNavigate()
-    const { setAuth, setUser } = useContext(UserContext)
 
-    // we will replace our placeholder jsx with a section container and a RegisterForm component
-
+    // **FUNCTION THAT REGISTERS USER - POST USER**
     const registerUser = async (data) => {
         try {
-
             const configs = {
                 method: "POST",
                 body: JSON.stringify(data),
@@ -37,23 +36,23 @@ function Auth(props) {
                 },
             }
 
+            // **FETCH NEW USERS**
             const newUser = await fetch(
-                "http://localhost:4000/auth/register",
+                "https://workoutapp-backend.herokuapp.com/auth/register",
                 configs
             )
 
+            // **SETS THE USER TO JSON STORED IN CONSTANT**
             const parsedUser = await newUser.json()
-            // console.log(parsedUser)
 
-            // sets local storage
+            // **SETS LOCAL STORAGE**
             setUserToken(parsedUser.token)
-            // put the returned user object in state
-            setUser(parsedUser.user)
-            // adds a boolean cast of the responses isAuthenticated prop
-            setAuth(parsedUser.isLoggedIn)
 
-            // alternative (safer) implementation would be to use jwt decode library - <https://www.npmjs.com/package/jwt-decode>
-            // this would also require reconfiguring our backend so we only send tokens with a signup
+            // **PUT THE RETURNED USER OBJECT IN A STATE**
+            setUser(parsedUser.user)
+
+            // **ADDS A BOOLEAN CAST OF THE RESPONSES ISAUTHENTCATED PROP**
+            setAuth(parsedUser.isLoggedIn)
 
             return parsedUser
 
@@ -76,7 +75,7 @@ function Auth(props) {
             }
 
             const response = await fetch(
-                "http://localhost:4000/auth/login",
+                "https://workoutapp-backend.herokuapp.com/auth/login",
                 configs
             )
 
@@ -104,7 +103,7 @@ function Auth(props) {
 
 
     return (
-        <section className="authentication-container">
+        <div className="authentication-container">
             <h1 className="authenticate">Are you...</h1>
             <h3 className="auth-button-container">
                 <button className="auth-button" onClick={() => {
@@ -114,15 +113,15 @@ function Auth(props) {
                 <button className="auth-button" onClick={() => {
                     handleShowS()
                 }}>Signing Up</button>
-                ?
             </h3>
+            <h3>?</h3>
             <Modal show={showS} onHide={handleCloseS}>
                 <RegisterForm signUp={registerUser} />
             </Modal>
             <Modal show={showL} onHide={handleCloseL}>
                 <LoginForm signIn={loginUser} />
             </Modal>
-        </section >
+        </div >
     )
 }
 
