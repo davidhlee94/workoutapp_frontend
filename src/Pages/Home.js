@@ -12,8 +12,8 @@ const Home = () => {
             <h1 className="home-title">Gainzville</h1>
             <p className="home-slogan">"Life has it's ups and downs. In Gainzville, we call those squats."</p>
             {!user.username ?
-                <Link to="/auth">Sign In</Link> :
-                <Link to="/workoutplan">Workout Plan</Link>
+                <Link className="sign-in" to="/auth">Sign In</Link> :
+                <Link className="sign-in" to="/workoutplan">Workout Plan</Link>
             }
 
         </div>

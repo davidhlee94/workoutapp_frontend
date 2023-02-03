@@ -1,55 +1,133 @@
-.authentication-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  font-family: "Poppins", sans-serif;
-  margin-top: 2em;
+/* mobile */
+@media only screen and (max-width: 768px) {
+  .authentication-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    margin-top: 2em;
+  }
+
+  .auth-button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+  }
+
+  .auth-button {
+    background-color: #0095ff;
+  }
+
+  .auth-button,
+  .auth-button-red {
+    border: 1px solid transparent;
+    border-radius: 3px;
+    box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.8em;
+    font-weight: 400;
+    margin: 20px;
+    outline: none;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    white-space: nowrap;
+    height: 2em;
+    width: 7em;
+  }
+
+  .auth-button:hover,
+  .auth-button:focus {
+    background-color: #07c;
+  }
+
+  .auth-button:focus {
+    box-shadow: 0 0 0 4px rgba(0, 149, 255, 0.15);
+  }
+
+  .auth-button:active {
+    background-color: #0064bd;
+    box-shadow: none;
+  }
+
+  .auth-button-red {
+    background-color: #ff5252;
+  }
 }
 
-.auth-button {
-  background-color: #0095ff;
-}
+/* web */
+@media only screen and (min-width: 769px) {
+  .authentication-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    margin-top: 2em;
+  }
 
-.auth-button,
-.auth-button-red {
-  border: 1px solid transparent;
-  border-radius: 3px;
-  box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0 0 inset;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 1.1em;
-  font-weight: 400;
-  margin: 20px;
-  outline: none;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: baseline;
-  white-space: nowrap;
-  height: 2em;
-  width: 7em;
-}
+  .auth-button {
+    background-color: #0095ff;
+  }
 
-.auth-button:hover,
-.auth-button:focus {
-  background-color: #07c;
-}
+  .auth-button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+  }
 
-.auth-button:focus {
-  box-shadow: 0 0 0 4px rgba(0, 149, 255, 0.15);
-}
+  .auth-button,
+  .auth-button-red {
+    border: 1px solid transparent;
+    border-radius: 3px;
+    box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.1em;
+    font-weight: 400;
+    margin: 20px;
+    outline: none;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    white-space: nowrap;
+    height: 2em;
+    width: 7em;
+  }
 
-.auth-button:active {
-  background-color: #0064bd;
-  box-shadow: none;
-}
+  .auth-button:hover,
+  .auth-button:focus {
+    background-color: #07c;
+  }
 
-.auth-button-red {
-  background-color: #ff5252;
+  .auth-button:focus {
+    box-shadow: 0 0 0 4px rgba(0, 149, 255, 0.15);
+  }
+
+  .auth-button:active {
+    background-color: #0064bd;
+    box-shadow: none;
+  }
+
+  .auth-button-red {
+    background-color: #ff5252;
+  }
 }

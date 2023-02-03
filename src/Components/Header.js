@@ -98,7 +98,7 @@ const Header = () => {
                                             logoutUser();
                                             setExpanded(false);
                                         }}>
-                                        <div className="col text-center link-text ">
+                                        <div className="col text-center link-text-logout ">
                                             LOG OUT
                                         </div>
                                     </Nav.Link>
