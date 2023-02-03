@@ -79,15 +79,16 @@
     flex-direction: column;
     align-items: center;
     height: 60vh;
-  }
-
-  .input.input {
-    width: 50vw;
+    padding: 0 2em 0 2em;
   }
 
   .input-button {
     height: 2em;
     margin-top: 1em;
+  }
+
+  .input.input {
+    width: 50vw;
   }
 
   .workoutplan-form {
@@ -185,10 +186,6 @@
     text-align: center;
   }
 
-  .input.input {
-    width: 20em;
-  }
-
   .button {
     border: 0;
     background-color: transparent;
@@ -267,6 +264,7 @@
     flex-direction: column;
     align-items: center;
     height: 40em;
+    padding: 0 2em 0 2em;
   }
 
   .input-button {
@@ -279,7 +277,6 @@
     align-items: center;
     height: 2em;
     justify-content: flex-end;
-    width: 100%;
     margin-bottom: 0.5em;
   }
 
@@ -292,6 +289,10 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+  }
+
+  .input.input {
+    width: 15em;
   }
 
   .form-image {

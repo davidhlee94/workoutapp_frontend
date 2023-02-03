@@ -8,7 +8,6 @@
   }
 
   .input {
-    width: 100%;
     margin-left: 0.3em;
   }
 
@@ -79,7 +78,14 @@
   }
 
   .input {
-    width: 100%;
+    margin-left: 0.3em;
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
   }
 
   .auth-image {
