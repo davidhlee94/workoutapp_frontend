@@ -46,7 +46,8 @@
     vertical-align: baseline;
     white-space: nowrap;
     height: 2em;
-    width: 7em;
+    width: 100%;
+    padding: 0 1em 0 1em;
   }
 
   .auth-button:hover,
@@ -113,7 +114,7 @@
     vertical-align: baseline;
     white-space: nowrap;
     height: 2em;
-    width: 7em;
+    width: 100%;
   }
 
   .auth-button:hover,
