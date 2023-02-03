@@ -29,6 +29,10 @@
     font-family: "Poppins", sans-serif;
     color: white;
   }
+  
+  .link-text-logout {
+    color: rgb(255, 0, 0);
+  }
 
   .right-aligned {
     justify-content: flex-end;
@@ -68,6 +72,10 @@
   .link-text {
     font-family: "Poppins", sans-serif;
     color: white;
+  }
+
+  .link-text-logout {
+    color: rgb(255, 0, 0);
   }
 
   .right-aligned {

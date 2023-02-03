@@ -16,10 +16,8 @@ const CollectionDetails = () => {
     const [show, setShow] = useState(false);
     const handleClose = () => {
         setShow(false);
-        // getExercises()
     }
     const handleShow = () => setShow(true);
-    // const [exercises, setExercises] = useState(null)
     const CollectionURL = `http://localhost:4000/collection/${id}`
 
     const getCollectionData = async () => {
@@ -31,22 +29,6 @@ const CollectionDetails = () => {
             console.log(error);
         }
     }
-
-    // const getExercises = async () => {
-    //     const exercisesArray = [];
-    //     const promises = collection["exercises"].map(async (_id) => {
-    //         try {
-    //             const response = await fetch(`http://localhost:4000/exercise/${_id}`);
-    //             const data = await response.json();
-    //             console.log(data)
-    //             exercisesArray.push(data);
-    //         } catch (error) {
-    //             console.log(error)
-    //         }
-    //     });
-    //     await Promise.all(promises);
-    //     setExercises(exercisesArray);
-    // };
 
 
     async function createExercise(exerciseData) {
@@ -93,12 +75,6 @@ const CollectionDetails = () => {
     useEffect(() => {
         getCollectionData();
     }, []);
-
-    // useEffect(() => {
-    //     if (collection.exercises) {
-    //         // getExercises();
-    //     }
-    // }, [collection]);
 
     return (
         <div className="collection-details-container">

@@ -106,7 +106,7 @@ function Auth(props) {
     return (
         <section className="authentication-container">
             <h1 className="authenticate">Are you...</h1>
-            <h3>
+            <h3 className="auth-button-container">
                 <button className="auth-button" onClick={() => {
                     handleShowL()
                 }}>Logging In</button>
@@ -122,7 +122,6 @@ function Auth(props) {
             <Modal show={showL} onHide={handleCloseL}>
                 <LoginForm signIn={loginUser} />
             </Modal>
-            {/* <button className="auth-button-red" onClick={logoutUser}>Log Out</button> */}
         </section >
     )
 }
