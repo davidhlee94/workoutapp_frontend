@@ -136,7 +136,7 @@ const WorkoutPlan = () => {
                                     name="collectionName"
                                     placeholder="workout plan name"
                                     onChange={handleChange}
-                                    className="input-form"
+                                    className="input"
                                 />
                             </div>
                             <div className="workoutplan-form">
@@ -147,7 +147,7 @@ const WorkoutPlan = () => {
                                     name="description"
                                     placeholder="description"
                                     onChange={handleChange}
-                                    className="input-form"
+                                    className="input"
                                 />
                             </div>
                         </div>

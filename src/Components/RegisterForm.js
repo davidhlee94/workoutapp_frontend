@@ -29,26 +29,28 @@ const RegisterForm = ({ signUp }) => {
             <h1>Register</h1>
             <img className="auth-image" src='https://media3.giphy.com/media/3orif0OR0foo5DdjlS/giphy.gif?cid=ecf05e47xkwcz8yhfn8p8co08yx35by0cdc44p4i6bnit0n3&rid=giphy.gif&ct=g' />
             <form onSubmit={handleSubmit}>
-                <label htmlFor="username">Username: </label>
-                <input
-                    className='input'
-                    id="username"
-                    name="username"
-                    value={input.username}
-                    onChange={handleChange}
-                />
+                <div className='input-container'>
+                    <label htmlFor="username">Username: </label>
+                    <input
+                        className='input'
+                        id="username"
+                        name="username"
+                        value={input.username}
+                        onChange={handleChange}
+                    />
+                </div>
                 <br />
-                <br />
-                <label htmlFor="password">Password: </label>
-                <input
-                    className='input'
-                    id="password"
-                    name="password"
-                    type="password"
-                    value={input.password}
-                    onChange={handleChange}
-                />
-                <br />
+                <div className='input-container'>
+                    <label htmlFor="password">Password: </label>
+                    <input
+                        className='input'
+                        id="password"
+                        name="password"
+                        type="password"
+                        value={input.password}
+                        onChange={handleChange}
+                    />
+                </div>
                 <br />
                 <div className='auth-button-2-container'>
                     <input

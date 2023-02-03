@@ -9,6 +9,14 @@
 
   .input {
     width: 100%;
+    margin-left: 0.3em;
+  }
+
+  .input-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
   }
 
   .auth-image {
@@ -38,7 +46,7 @@
     vertical-align: baseline;
     white-space: nowrap;
     height: 2em;
-    width: 100%;
+    width: 6em;
   }
 
   .auth-button-2:hover,
@@ -101,7 +109,7 @@
     vertical-align: baseline;
     white-space: nowrap;
     height: 2em;
-    width: 100%;
+    width: 3em;
   }
 
   .auth-button-2:hover,

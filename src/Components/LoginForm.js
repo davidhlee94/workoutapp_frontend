@@ -31,25 +31,29 @@ const LoginForm = ({ signIn }) => {
             <h1 >Login</h1>
             <img className="auth-image" src='https://33.media.tumblr.com/48d5b505077d12cc479ebc2ff5d5e2ca/tumblr_nk7if66hJ21s6wlblo1_500.gif' />
             <form onSubmit={handleSubmit}>
-                <label htmlFor="username">Name: </label>
-                <input className='input'
-                    id="username"
-                    name="username"
-                    value={input.username}
-                    onChange={handleChange}
-                />
+                <div className='input-container'>
+                    <label htmlFor="username">Name: </label>
+                    <input
+                        className='input'
+                        id="username"
+                        name="username"
+                        value={input.username}
+                        onChange={handleChange}
+
+                    />
+                </div>
                 <br />
-                <br />
-                <label htmlFor="password">Password: </label>
-                <input
-                    className='input'
-                    id="password"
-                    name="password"
-                    type="password"
-                    value={input.password}
-                    onChange={handleChange}
-                />
-                <br />
+                <div className='input-container'>
+                    <label htmlFor="password">Password: </label>
+                    <input
+                        className='input'
+                        id="password"
+                        name="password"
+                        type="password"
+                        value={input.password}
+                        onChange={handleChange}
+                    />
+                </div>
                 <br />
                 <div className='auth-button-2-container'>
                     <input
