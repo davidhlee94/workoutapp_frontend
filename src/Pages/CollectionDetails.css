@@ -112,12 +112,8 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 60vh;
+    height: 65vh;
   }
-
-  /* .modal {
-    margin: 45% 0 45% 0;
-  } */
 
   .exercise-form-image {
     width: 90%;
@@ -268,10 +264,6 @@
   .exercise-text {
     margin: 0;
     padding-right: 0.4em;
-  }
-
-  .modal-dialog {
-    margin-top: 15em;
   }
 
   .exercise-modal {
