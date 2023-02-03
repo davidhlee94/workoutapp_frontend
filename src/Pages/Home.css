@@ -39,6 +39,7 @@
 
   .home-slogan {
     color: rgb(61, 61, 61);
+    text-align: center;
   }
 }
 
@@ -84,5 +85,6 @@
   .home-slogan {
     color: rgb(61, 61, 61);
     font-size: 1em;
+    text-align: center;
   }
 }

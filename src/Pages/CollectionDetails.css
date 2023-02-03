@@ -2,6 +2,10 @@
 @media only screen and (max-width: 768px) {
   .collection-details-container {
     font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .exercise-modal {
@@ -28,6 +32,7 @@
     background-color: #bccbd08a;
     display: flex;
     flex-direction: column;
+    width: 90vw;
   }
 
   .exercise-name {

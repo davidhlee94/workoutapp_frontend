@@ -6,11 +6,24 @@
     border-radius: 1em;
     margin-bottom: 1em;
     background-color: #bccbd08a;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
   .workout-container:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     transition: all 0.3s ease-in-out;
+  }
+
+  .modal-text {
+    text-align: center;
+  }
+
+  .button {
+    border: 0;
+    background-color: transparent;
   }
 
   .modal {
@@ -166,6 +179,19 @@
     margin-bottom: 1em;
     background-color: #bccbd08a;
     width: 50em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .modal-text {
+    text-align: center;
+  }
+
+  .button {
+    border: 0;
+    background-color: transparent;
   }
 
   .workout-container:hover {

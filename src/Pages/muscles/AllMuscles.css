@@ -48,10 +48,12 @@
   .mg-blocks-container {
     display: flex;
     flex-direction: column;
+    width: 90vw;
   }
 
   .muscle-name-image {
     margin-right: 2em;
+    width: 90vw;
   }
 
   .muscle-video-d {

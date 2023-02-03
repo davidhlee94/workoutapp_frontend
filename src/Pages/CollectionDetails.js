@@ -16,10 +16,10 @@ const CollectionDetails = () => {
     const [show, setShow] = useState(false);
     const handleClose = () => {
         setShow(false);
-        window.location.reload()
+        // getExercises()
     }
     const handleShow = () => setShow(true);
-    const [exercises, setExercises] = useState(null)
+    // const [exercises, setExercises] = useState(null)
     const CollectionURL = `http://localhost:4000/collection/${id}`
 
     const getCollectionData = async () => {
@@ -32,20 +32,21 @@ const CollectionDetails = () => {
         }
     }
 
-    const getExercises = async () => {
-        const exercisesArray = [];
-        const promises = collection["exercises"].map(async (_id) => {
-            try {
-                const response = await fetch(`http://localhost:4000/exercise/${_id}`);
-                const data = await response.json();
-                exercisesArray.push(data);
-            } catch (error) {
-                console.log(error)
-            }
-        });
-        await Promise.all(promises);
-        setExercises(exercisesArray);
-    };
+    // const getExercises = async () => {
+    //     const exercisesArray = [];
+    //     const promises = collection["exercises"].map(async (_id) => {
+    //         try {
+    //             const response = await fetch(`http://localhost:4000/exercise/${_id}`);
+    //             const data = await response.json();
+    //             console.log(data)
+    //             exercisesArray.push(data);
+    //         } catch (error) {
+    //             console.log(error)
+    //         }
+    //     });
+    //     await Promise.all(promises);
+    //     setExercises(exercisesArray);
+    // };
 
 
     async function createExercise(exerciseData) {
@@ -57,7 +58,7 @@ const CollectionDetails = () => {
                 },
                 body: JSON.stringify(exerciseData),
             });
-            getExercises();
+            getCollectionData();
         } catch (error) {
             console.log(error)
         }
@@ -70,7 +71,7 @@ const CollectionDetails = () => {
             };
             const response = await fetch(`http://localhost:4000/exercise/${id}`, options);
             const deletedExercise = await response.json();
-            window.location.reload()
+            getCollectionData()
         } catch (error) {
             console.log(error)
         }
@@ -93,26 +94,28 @@ const CollectionDetails = () => {
         getCollectionData();
     }, []);
 
-    useEffect(() => {
-        if (collection.exercises) {
-            getExercises();
-        }
-    }, [collection]);
+    // useEffect(() => {
+    //     if (collection.exercises) {
+    //         // getExercises();
+    //     }
+    // }, [collection]);
 
     return (
         <div className="collection-details-container">
             <h1 className="collection-title">{collection.collectionName}</h1>
             <h1 className="collection-description">{collection.description}</h1>
-            {exercises ? (
-                exercises.filter(exercise => exercise).map(exercise => (
+            {collection.exercises ? (
+                collection.exercises.filter(exercise => exercise).map(exercise => (
                     <div key={exercise._id} className="exercise-container">
                         <div className="exercise-name-button">
                             <h1 className="exercise-name">{exercise.name}</h1>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
-                                <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" onClick={() => {
-                                    deleteExercise(exercise._id)
-                                }} /></svg>
+                            <button className="button" onClick={() => {
+                                deleteExercise(exercise._id)
+                            }} >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" fill="currentColor" className="bi bi-trash" viewBox="0 0 16 16">
+                                    <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
+                                    <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" /></svg>
+                            </button>
                         </div>
                         <div className="exercise-info">
                             <p className="exercise-info-text">Sets: {exercise.sets}</p>
@@ -124,7 +127,7 @@ const CollectionDetails = () => {
             ) : (
                 <p>Loading exercises...</p>
             )}
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" className="bi bi-plus-circle-fill" viewBox="0 0 16 16">
                 <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z" type="submit"
                     value="Add an exercise"
                     onClick={() => {
