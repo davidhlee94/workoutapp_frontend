@@ -44,11 +44,12 @@ const AllMuscles = (params) => {
                         {muscles[0].exercises.map((exercise) => (
                             <div className="muscle-video-d">
                                 <p className="muscle-exercises">{exercise.description}</p>
-                                <iframe src={exercise.video} allow="autoplay">
-                                </iframe>
+                                <video controls className="video">
+                                    <source src={exercise.video} type="video/webm" />
+                                </video>
                             </div>
                         ))}
-
+                        
                     </div>
                 </div>
             )}
