@@ -50,7 +50,7 @@ const AllMuscles = (params) => {
                             </div>
                         ))}
                         <video controls className="video">
-                            <source src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4" type="video/mp4">
+                            <source src="https://gymvisual.com/modules/productmedia/uploads/00251201barbellbenchpresschestfix2view.mp4" type="video/mp4">
                             </source>
                         </video>
                     </div>
