@@ -45,12 +45,14 @@ const AllMuscles = (params) => {
                             <div className="muscle-video-d">
                                 <p className="muscle-exercises">{exercise.description}</p>
                                 <video controls className="video">
-                                    {/* <source src={exercise.video} type="video/webm" /> */}
-                                    <source src="https://www.shutterstock.com/shutterstock/videos/16516837/preview/stock-footage-pushups-video-guides-exercising-for-bodybuilding-target-muscles-are-marked-in-red-initial-and.webm" type="video/webm">
-                                    </source>
+                                    <source src={exercise.video} type="video/webm" />
                                 </video>
                             </div>
                         ))}
+                        <video controls className="video">
+                            <source src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4" type="video/mp4">
+                            </source>
+                        </video>
                     </div>
                 </div>
             )}
