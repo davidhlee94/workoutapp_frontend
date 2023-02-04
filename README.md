@@ -1,11 +1,11 @@
-<img width="auto" src="https://user-images.githubusercontent.com/112284075/211639715-6cdd3cd8-289d-4f0b-b9b2-d95dc14adac8.png" alt="coverpage">
+<img width="auto" src="https://user-images.githubusercontent.com/112284075/216750669-9d29a162-b647-4404-86ba-926589d0d1ba.png" alt="coverpage">
 
 
 
 # 💪 Gainzville 💪
 #### By David Lee
 #### [Gainzville Live Site](https://gainzville-app.netlify.app/)
-#### [NiFT Github Backend GitHub](https://github.com/davidhlee94/workoutapp_backend)
+#### [Gainzville Github Backend GitHub](https://github.com/davidhlee94/workoutapp_backend)
 
 
 
