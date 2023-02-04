@@ -45,7 +45,7 @@ const AllMuscles = (params) => {
                             <div className="muscle-video-d">
                                 <p className="muscle-exercises">{exercise.description}</p>
                                 <video controls loop autoplay className="video">
-                                    <source src={exercise.video} type="video/mp4" />
+                                    <source src={exercise.video} type="video/ogg" />
                                 </video>
                             </div>
                         ))}
