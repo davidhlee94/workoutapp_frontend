@@ -44,15 +44,11 @@ const AllMuscles = (params) => {
                         {muscles[0].exercises.map((exercise) => (
                             <div className="muscle-video-d">
                                 <p className="muscle-exercises">{exercise.description}</p>
-                                <video controls className="video">
-                                    <source src={exercise.video} type="video/webm" />
-                                </video>
+                                <iframe src={exercise.video} allow="autoplay">
+                                </iframe>
                             </div>
                         ))}
-                        <video controls className="video">
-                            <source src="https://gymvisual.com/modules/productmedia/uploads/00251201barbellbenchpresschestfix2view.mp4" type="video/mp4">
-                            </source>
-                        </video>
+
                     </div>
                 </div>
             )}
