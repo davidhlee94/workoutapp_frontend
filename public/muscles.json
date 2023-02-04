@@ -9,15 +9,15 @@
       },
       {
         "description": "Leg Raises: Lie flat on your back with your legs straight. Slowly raise your legs up towards the ceiling, then lower them back down. Repeat for desired reps.",
-        "video": "https://www.shutterstock.com/shutterstock/videos/1017032323/preview/stock-footage-leg-raise-hip-lift-with-head-up-exercise-anatomy-of-fitness-and-bodybuilding-targeted-muscles-are.webm"
+        "video": "/video/legraisehipup.mp4"
       },
       {
         "description": "Plank: Get into a push-up position, but instead of lowering yourself down, hold yourself up in a straight line. Keep your abs engaged and hold for desired time.",
-        "video": "https://www.shutterstock.com/shutterstock/videos/1046000944/preview/stock-footage-front-plank-waist-exercise-d.webm"
+        "video": "/video/plank.mp4"
       },
       {
         "description": "Russian Twist: Sit on the floor with your knees bent and your feet flat. Hold a weight in both hands and twist your torso to one side, then the other. Repeat for desired reps.",
-        "video": "https://drive.google.com/file/d/15eBkrXFifrn0HSkMYUwm1Y9jugsUvTex/preview"
+        "video": "/video/russiantwist.mp4"
       }
     ],
     "description": "The abdominal muscles, commonly referred to as the abs, are a group of muscles located in the front of the torso that play a key role in supporting the spine and assisting with movements such as bending and twisting. The most well-known abdominal muscle is the rectus abdominis, which creates the 'six-pack' appearance when developed. To exercise the abs, a variety of exercises can be performed such as crunches, sit-ups, planks, Russian twists, and bicycle crunches. These exercises can be done with or without equipment and can be incorporated into a full-body workout routine or done as a separate ab workout. It's important to remember to engage the core and maintain proper form to avoid injury and effectively target the abs."
@@ -28,19 +28,19 @@
     "exercises": [
       {
         "description": "Pull-ups: A great compound exercise that targets the lats, rhomboids, and traps.",
-        "video": "https://www.shutterstock.com/shutterstock/videos/33735817/preview/stock-footage-pull-up-exercise-d-video.webm"
+        "video": "/video/pullup.mp4"
       },
       {
         "description": "Dumbbell Rows: This exercise isolates the lats and rhomboids and helps to build upper back strength.",
-        "video": "https://www.shutterstock.com/shutterstock/videos/1043189659/preview/stock-footage-dumbbell-one-arm-row-d.webm"
+        "video": "/video/dumbbellrow.mp4"
       },
       {
         "description": "Lat Pulldowns: This machine exercise is a good alternative to pull-ups and focuses on the lats.",
-        "video": "https://www.shutterstock.com/shutterstock/videos/1042980109/preview/stock-footage-cable-machine-wide-grip-lat-pulldown-female-d.webm"
+        "video": "/video/latpulldown.mp4"
       },
       {
         "description": "Barbell Deadlifts: This compound exercise targets the entire back, including the erector spinae and traps, as well as the legs, glutes, and core.",
-        "video": "https://www.shutterstock.com/shutterstock/videos/1046001271/preview/stock-footage-barbell-sumo-deadlift-hips-exercise-d.webm"
+        "video": "/video/deadlift.mp4"
       }
     ],
     "description": "The back muscles are a large group of muscles responsible for supporting the spine, facilitating movement, and maintaining good posture. Some of the key muscles in the back include the latissimus dorsi (lats), rhomboids, trapezius (traps), and erector spinae."
@@ -55,15 +55,15 @@
       },
       {
         "description": "Chin-ups: Grasp a chin-up bar with palms facing towards you and pull yourself up towards the bar.",
-        "video": "https://www.shutterstock.com/shutterstock/videos/1043189737/preview/stock-footage-close-grip-chin-up-d.webm"
+        "video": "/video/bicepcurl.mp4"
       },
       {
         "description": "Hammer curls: Using dumbbells, curl the weights up and down while keeping your palms facing each other.",
-        "video": "https://www.shutterstock.com/shutterstock/videos/1043189332/preview/stock-footage-dumbbell-peacher-hammer-curl-d.webm"
+        "video": "/video/preachercurl.mp4"
       },
       {
         "description": "Concentration curls: Sit on a bench and hold a dumbbell with one arm, bending your arm at the elbow to bring the weight towards your shoulder and then lower it back down.",
-        "video": "https://www.shutterstock.com/shutterstock/videos/1017032416/preview/stock-footage-ez-bar-seated-close-grip-concentration-curl-exercise-anatomy-of-fitness-and-bodybuilding-targeted.webm"
+        "video": "/video/concentrationcurl.mp4"
       }
     ],
     "description": "The biceps, located in the front part of the upper arm, are one of the most commonly worked out muscle groups. The primary function of the biceps is to bend the arm at the elbow and assist with shoulder movements."
@@ -74,15 +74,15 @@
     "exercises": [
       {
         "description": "Calf Raise: Stand with your feet hip-width apart, then raise up onto your toes and hold for a few seconds before lowering back down. You can perform calf raises with weights for added resistance.",
-        "video": "https://www.shutterstock.com/shutterstock/videos/1017638062/preview/stock-footage-dumbbell-standing-calf-raise-exercise-anatomy-of-fitness-and-bodybuilding-target-muscles-are-red.webm"
+        "video": "/video/calfraise.mp4"
       },
       {
         "description": "Seated Calf Raise: Sit on the edge of a bench or chair with your feet flat on the ground. Place weights on your knees and then raise your heels off the ground, hold for a few seconds and then lower.",
-        "video": "https://www.shutterstock.com/shutterstock/videos/1042907923/preview/stock-footage-leverage-machine-seated-calf-raise-plate-loaded-d.webm"
+        "video": "/video/seatedcalfraises.mp4"
       },
       {
         "description": "Stair Running: Running up and down stairs is an effective way to work your calf muscles, as well as your cardiovascular system.",
-        "video": "https://www.shutterstock.com/shutterstock/videos/1017638224/preview/stock-footage-run-on-treadmill-exercise-anatomy-of-fitness-and-bodybuilding-target-muscles-are-red-d.webm"
+        "video": "/video/stepup.mp4"
       }
     ],
     "description": "The calf muscle, located in the lower leg, is made up of two muscles: the gastrocnemius and the soleus. These muscles are responsible for plantar flexion, which helps in activities such as jumping, running, and walking. To work out the calf muscles, some exercises include calf raises, jump rope, calf stretch, and squats. It's important to exercise both the gastrocnemius and the soleus for balanced development and to prevent injury. Incorporating calf exercises into your workout routine can help increase strength, power, and endurance in your lower legs."
@@ -93,19 +93,19 @@
     "exercises": [
       {
         "description": "Push-ups: Start in a plank position with hands placed slightly wider than shoulder-width apart. Lower your body until your chest nearly touches the ground, then push back up to the starting position.",
-        "video": "https://www.shutterstock.com/shutterstock/videos/16516837/preview/stock-footage-pushups-video-guides-exercising-for-bodybuilding-target-muscles-are-marked-in-red-initial-and.webm"
+        "video": "/video/pushups.mp4"
       },
       {
         "description": "Dumbbell Bench Press: Lie flat on a bench with a dumbbell in each hand at chest level. Push the weights up until your arms are extended, then slowly lower them back to your chest.",
-        "video": "https://www.shutterstock.com/shutterstock/videos/33735811/preview/stock-footage-dumbbell-bench-press-exercise-d-video.webm"
+        "video": "/video/dumbbellbenchpress.mp4"
       },
       {
         "description": "Dumbbell Flys: Lie flat on a bench with a dumbbell in each hand above your chest. Lower the weights out to the sides until your arms are parallel to the ground, then raise them back up to the starting position.",
-        "video": "https://www.shutterstock.com/shutterstock/videos/1010741828/preview/stock-footage-cable-lying-fly-anatomy-of-fitness-and-bodybuilding-chest-d.webm"
+        "video": "/video/chestfly.mp4"
       },
       {
         "description": "Cable Crossovers: Stand in front of a cable machine with cables attached to the highest pulley. Grasp the handles and bring your arms together in front of your chest, then slowly return to the starting position.",
-        "video": "https://www.shutterstock.com/shutterstock/videos/1046311222/preview/stock-footage-cable-standing-up-straight-crossovers-chest-exercise-d.webm"
+        "video": "/video/cablefly.mp4"
       }
     ],
     "description": "The chest muscle, also known as the pectoral muscle, is a large muscle group located in the front of the upper body. To work out the chest muscle, there are a variety of exercises that can be performed with either bodyweight or weights. "
@@ -115,12 +115,12 @@
     "image": "https://cdn.shopify.com/s/files/1/1214/5580/files/Muscle_Group_Glutes.jpg?v=1601050628",
     "exercises": [
       {
-        "description": "https://www.shutterstock.com/shutterstock/videos/1046001094/preview/stock-footage-cable-wrist-curl-forearms-exercise-d.webm",
-        "video": "https://www.shutterstock.com/shutterstock/videos/1010741828/preview/stock-footage-cable-lying-fly-anatomy-of-fitness-and-bodybuilding-chest-d.webm"
+        "description": "Preacher Curls: Sit on a preacher curl bench with an underhand grip on a barbell. Place upper arms on the bench and keep them still. Curl the weight towards your shoulders, using only your biceps and forearms. Pause, then lower weight to start position. Repeat for desired reps. Focus on proper form and use a weight that challenges but allows for good form. Keep your elbows still to isolate the movement and target the biceps and forearms.",
+        "video": "/video/preachercurl.mp4"
       },
       {
-        "description": "https://www.shutterstock.com/shutterstock/videos/1017032416/preview/stock-footage-ez-bar-seated-close-grip-concentration-curl-exercise-anatomy-of-fitness-and-bodybuilding-targeted.webm",
-        "video": "https://www.shutterstock.com/shutterstock/videos/1010741828/preview/stock-footage-cable-lying-fly-anatomy-of-fitness-and-bodybuilding-chest-d.webm"
+        "description": "Sit on the edge of a bench and grasp a dumbbell with one hand, using an underhand grip. Rest the elbow of the working arm against the inside of your thigh, with your hand hanging down towards the floor. Keeping your upper arm stationary, curl the weight towards your shoulder by contracting your biceps. Pause at the top of the movement, then lower the weight back to the starting position in a controlled manner.",
+        "video": "/video/concentrationcurl.mp4"
       }
     ],
     "description": "The forearm muscles are a group of muscles located in the lower arm responsible for wrist and finger movement. The forearm muscles include the flexor and extensor muscles of the wrist and fingers, as well as the pronator and supinator muscles. These muscles play a crucial role in hand and wrist function, making them important for a variety of daily activities, as well as athletic performance. Strengthening the forearm muscles can improve grip strength and hand stability, reducing the risk of injury. Common exercises for the forearm muscles include wrist curls, reverse wrist curls, grip strengtheners, and farmer's walks."
@@ -131,19 +131,19 @@
     "exercises": [
       {
         "description": "Squats: Stand with your feet shoulder-width apart, with your arms extended out in front of you for balance. Slowly lower your body as if sitting back into a chair, keeping your back straight and weight in your heels. Push back up to starting position.",
-        "video": "https://www.shutterstock.com/shutterstock/videos/1042909138/preview/stock-footage-barbell-low-bar-squat-d.webm"
+        "video": "/video/squat.mp4"
       },
       {
         "description": "Lunges: Step forward with one foot, lowering your body down until both knees form 90-degree angles. Push back up to starting position and repeat on the other side.",
-        "video": "https://www.shutterstock.com/shutterstock/videos/1042907851/preview/stock-footage-barbell-on-top-lunge-d.webm"
+        "video": "/video/lunges.mp4"
       },
       {
         "description": "Deadlifts: Stand with your feet hip-width apart and hold a weight in front of you. Bend at the hips and knees, lowering the weight towards the floor while keeping your back straight. Push back up to starting position.",
-        "video": "https://www.shutterstock.com/shutterstock/videos/1046001271/preview/stock-footage-barbell-sumo-deadlift-hips-exercise-d.webm"
+        "video": "/video/deadlift.mp4"
       },
       {
         "description": "Glute bridges: Lie on your back with your knees bent and feet flat on the floor. Push through your heels to raise your hips towards the ceiling, then lower back down.",
-        "video": "https://www.shutterstock.com/shutterstock/videos/1042907476/preview/stock-footage-barbell-glutes-bridge-hands-on-bar-d.webm"
+        "video": "/video/glutebridge.mp4"
       }
     ],
     "description": "The glutes are a group of three muscles located in the buttocks area that help with movement and stability of the hip and thigh. These muscles, namely the gluteus maximus, medius and minimus, are important for activities such as walking, running, jumping, and climbing stairs. To work out the glutes, exercises such as squats, lunges, deadlifts, and step-ups can be incorporated into a strength training routine. Additionally, bodyweight exercises such as glute bridges, single leg bridges and fire hydrants can also be performed to target and tone the glutes."
@@ -154,19 +154,19 @@
     "exercises": [
       {
         "description": "Deadlifts: Stand with feet hip-width apart and grasp a barbell or dumbbells with palms facing down. Keep the back straight and bend forward at the hips, lowering the weights towards the shins until they are below the knees. Return to starting position.",
-        "video": "https://www.shutterstock.com/shutterstock/videos/1016791645/preview/stock-footage-barbell-deadlift-exercise-anatomy-of-fitness-and-bodybuilding-target-muscles-are-marked-red-d.webm"
+        "video": "/video/deadlift.mp4"
       },
       {
         "description": "Romanian Deadlifts: Stand with feet hip-width apart and grasp a barbell or dumbbells with palms facing your legs. Keep the back straight and bend forward at the hips, lowering the weights towards the shins. Return to starting position by straightening the hips, not the back.",
-        "video": "https://www.shutterstock.com/shutterstock/videos/1042979143/preview/stock-footage-barbell-romanian-deadlift-female-d.webm"
+        "video": "/video/romaniandeadlift.mp4"
       },
       {
         "description": "Leg Curls: Lie face down on a leg curl machine with heels under the pad and grasp the handles. Bend knees, lifting the weight towards the glutes. Return to starting position.",
-        "video": "https://www.shutterstock.com/shutterstock/videos/1042979176/preview/stock-footage-leverage-machine-seated-leg-curl-female.webm"
+        "video": "/video/legpress.mp4"
       },
       {
         "description": "Glute Bridges: Lie on your back with knees bent, feet flat on the floor, and arms at your sides. Lift your hips up towards the ceiling, then return to starting position.",
-        "video": "https://www.shutterstock.com/shutterstock/videos/1042907476/preview/stock-footage-barbell-glutes-bridge-hands-on-bar-d.webm"
+        "video": "/video/glutebridge.mp4"
       }
     ],
     "description": "The hamstring muscle is a group of muscles located in the back of the thigh. It is responsible for flexing the knee and extending the hip. To work out the hamstring muscles, it's important to include exercises that target the muscle group."
@@ -177,15 +177,15 @@
     "exercises": [
       {
         "description": "Squats: Stand with your feet hip-width apart and lower your body as if you were sitting back into a chair. Push through your heels to stand back up. Repeat for desired number of reps.",
-        "video": "https://www.shutterstock.com/shutterstock/videos/1042909138/preview/stock-footage-barbell-low-bar-squat-d.webm"
+        "video": "/video/squat.mp4"
       },
       {
         "description": "Lunges: Take a step forward with one foot and lower your body until both knees form 90 degree angles. Push through the front foot to return to the starting position. Repeat on the other side.",
-        "video": "https://www.shutterstock.com/shutterstock/videos/1017371422/preview/stock-footage-dumbbell-lunge-exercise-anatomy-of-fitness-and-bodybuilding-target-muscles-are-red-d.webm"
+        "video": "/video/lunges.mp4"
       },
       {
         "description": "Leg Press: Use a leg press machine to extend your legs while keeping your back and feet firmly against the machine.",
-        "video": "https://www.shutterstock.com/shutterstock/videos/1042908592/preview/stock-footage-sled-narrow-stance-leg-press-d.webm"
+        "video": "/video/legpress.mp4"
       }
     ],
     "description": "The quadriceps muscles are a group of four large muscles located in the front of the thigh. They are responsible for extending the knee joint, and play a crucial role in activities such as walking, running, jumping, and climbing. Strengthening the quadriceps muscles can help improve balance, stability, and overall athletic performance."
@@ -196,19 +196,19 @@
     "exercises": [
       {
         "description": "Dumbbell Shoulder Press: Stand with feet shoulder-width apart and hold a dumbbell in each hand at shoulder height. Push the weights up over your head until your arms are fully extended, then lower the weights back down to your shoulders.",
-        "video": "https://www.shutterstock.com/shutterstock/videos/1016791639/preview/stock-footage-dumbbell-shoulder-arnold-press-anatomy-of-fitness-and-bodybuilding-target-muscles-are-marked-red.webm"
+        "video": "/video/shoulderpress.mp4"
       },
       {
         "description": "Lateral Raises: Stand with feet shoulder-width apart and hold a dumbbell in each hand at your sides. Lift the weights up to the sides of your body, keeping your arms straight and your elbows slightly bent, then lower the weights back down to your sides.",
-        "video": "https://www.shutterstock.com/shutterstock/videos/1017638002/preview/stock-footage-dumbbell-standing-bent-arm-lateral-raise-exercise-anatomy-of-fitness-and-bodybuilding-target.webm"
+        "video": "/video/lateralraises.mp4"
       },
       {
         "description": "Rear Deltoid Flys: Stand with feet shoulder-width apart and hold a light weight in each hand. Keeping your arms straight, raise the weights out to the sides, forming a 'T' shape with your body. Lower the weights back down to your sides.",
-        "video": "https://www.shutterstock.com/shutterstock/videos/1016912062/preview/stock-footage-cable-seated-rear-lateral-raise-exercise-anatomy-of-fitness-and-bodybuilding-target-muscles-are.webm"
+        "video": "/video/lateralraises.mp4"
       },
       {
         "description": "Upright Rows: Stand with feet shoulder-width apart and hold a barbell in front of your body, with your hands close together. Pull the bar up towards your chin, keeping your elbows up and out to the sides, then lower the bar back down to your thighs.",
-        "video": "https://www.shutterstock.com/shutterstock/videos/1042980985/preview/stock-footage-barbell-shoulder-grip-upright-row-female-d.webm"
+        "video": "/video/barbellshoulderrow.mp4"
       }
     ],
     "description": "The shoulder muscles are a complex group of muscles responsible for various movements of the shoulder joint. The three main shoulder muscles are the anterior deltoid, lateral deltoid, and posterior deltoid. "
@@ -219,19 +219,19 @@
     "exercises": [
       {
         "description": "Close Grip Bench Press: Lie on a flat bench with your feet flat on the ground. Grasp the barbell with your hands positioned closer than shoulder width. Lower the bar to your chest and then push it back up.",
-        "video": "https://www.shutterstock.com/shutterstock/videos/1043130130/preview/stock-footage-barbell-reverse-close-grip-bench-press-d.webm"
+        "video": "/video/reverseclosegripbenchpress.mp4"
       },
       {
         "description": "Tricep Dips: Find a sturdy surface such as parallel bars or the edge of a bench. Lower your body by bending your arms, then press yourself back up.",
-        "video": "https://www.shutterstock.com/shutterstock/videos/1046311069/preview/stock-footage-chest-dip-on-dip-pull-up-cage-chest-exercise-d.webm"
+        "video": "/video/dips.mp4"
       },
       {
         "description": "Overhead Tricep Extension: Stand or sit with a dumbbell in one hand. Raise the weight overhead and then lower it behind your head by bending at the elbow.",
-        "video": "https://www.shutterstock.com/shutterstock/videos/1016912131/preview/stock-footage-ez-barbell-decline-triceps-extension-exercise-anatomy-of-fitness-and-bodybuilding-target-muscles.webm"
+        "video": "/video/tricepextension.mp4"
       },
       {
-        "description": "Tricep Pushdown: Attach a bar to a high pulley and stand facing the machine. Grasp the bar with an overhand grip and push it down towards your thighs.",
-        "video": "https://www.shutterstock.com/shutterstock/videos/1046311012/preview/stock-footage-cable-rope-high-pulley-overhead-triceps-extension-upper-arms-exercise-d.webm"
+        "description": "Tricep Extension: Attach a bar to a high pulley and stand facing the machine. Grasp the bar with an overhand grip and push it down towards your thighs.",
+        "video": "/video/triceppulldown.mp4"
       }
     ],
     "description": "The triceps muscle is a large, three-headed muscle located at the back of the upper arm. It is responsible for extending the arm and is one of the most important muscles for upper body strength. To work out the triceps, you can perform exercises such as close grip bench press, skull crushers, tricep pushdowns, overhead tricep extensions, dips and diamond push-ups. To perform these exercises, you need to use proper form and technique to engage the triceps and avoid injury. It's important to start with light weights and gradually increase resistance as you progress to avoid overloading the muscle. Incorporating different types of tricep exercises and rep ranges into your workout routine can help target the muscle from different angles for maximum gains."
