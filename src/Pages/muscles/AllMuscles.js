@@ -44,7 +44,7 @@ const AllMuscles = (params) => {
                         {muscles[0].exercises.map((exercise) => (
                             <div className="muscle-video-d">
                                 <p className="muscle-exercises">{exercise.description}</p>
-                                <video controls loop autoplay className="video">
+                                <video controls className="video">
                                     <source src={exercise.video} type="video/webm" />
                                 </video>
                             </div>
