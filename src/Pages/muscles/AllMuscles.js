@@ -45,7 +45,7 @@ const AllMuscles = (params) => {
                             <div className="muscle-video-d">
                                 <p className="muscle-exercises">{exercise.description}</p>
                                 <video controls className="video">
-                                    <source src={exercise.video} type="video/webm" />
+                                    <source src={exercise.video} type="video/mp4" />
                                 </video>
                             </div>
                         ))}
