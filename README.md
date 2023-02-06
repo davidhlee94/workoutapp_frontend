@@ -59,8 +59,8 @@ When building this project, I was able to: <br>
 Here are a few stretch goals I look to accomplish in the future:<br>
 
 📄 An even simpler UI<br>
-📄 Taking the muscle info and adding it directly to the workouts<br>
-📄 More to come...
+📄 Ability to update current exercise weight<br>
+📄 Sorting feature
 <br>
 ## 🔨 Built By 🔨
 #### David Lee
