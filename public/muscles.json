@@ -51,11 +51,11 @@
     "exercises": [
       {
         "description": "Bicep curls: Using dumbbells or a barbell, lift the weight up towards the shoulders and then lower it back down.",
-        "video": "https://www.shutterstock.com/shutterstock/videos/1043189836/preview/stock-footage-dumbbell-standing-inner-biceps-curl-d.webm"
+        "video": "/video/bicepcurl.mp4"
       },
       {
         "description": "Chin-ups: Grasp a chin-up bar with palms facing towards you and pull yourself up towards the bar.",
-        "video": "/video/bicepcurl.mp4"
+        "video": "/video/chinup.mp4"
       },
       {
         "description": "Hammer curls: Using dumbbells, curl the weights up and down while keeping your palms facing each other.",
