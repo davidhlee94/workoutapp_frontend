@@ -26,7 +26,7 @@ const WorkoutPlan = () => {
         exercises: []
     });
 
-    // **FUNCTION FETCHING ALL WORKOUT COLLECTIONS**
+    // **FUNCTION FETCHING ALL WORKOUT COLLECTIONS THAT BELONG TO OWNER**
     const getCollections = async () => {
         try {
             const response = await fetch(URL);

@@ -19,7 +19,6 @@ const AllMuscles = (params) => {
         })
         setMuscle(newArray);
     }
-    console.log(name)
 
 
     // **USEEFFECT THAT RUNS GETCOLLECTIONS, THAT TRACKS THE STATE OF SHOW**

@@ -3,7 +3,6 @@ import { UserContext } from "../data";
 import RegisterForm from "../Components/RegisterForm";
 import { setUserToken, clearUserToken } from "../utils/authToken";
 import LoginForm from "../Components/LoginForm";
-import { useNavigate } from "react-router-dom";
 import "./Auth.css"
 import { Modal } from "react-bootstrap";
 import { useState } from "react";
@@ -63,7 +62,7 @@ function Auth(props) {
         }
     }
 
-
+    // **FUNCTION THAT LOGS IN USER - POST USER**
     const loginUser = async (data) => {
         try {
             const configs = {
@@ -73,15 +72,17 @@ function Auth(props) {
                     "Content-Type": "application/json",
                 },
             }
-
+            // **FETCH EXISTING USER**
             const response = await fetch(
                 "https://workoutapp-backend.herokuapp.com/auth/login",
                 configs
             )
 
+            // **SETS THE USER TO JSON STORED IN CONSTANT**
             const currentUser = await response.json()
-            console.log(currentUser)
 
+
+            // **IF THE USER HAS A TOKEN, SET USER TOKEN STATE, AND SET USER, AND SET AUTH**
             if (currentUser.token) {
                 // sets local storage
                 setUserToken(currentUser.token)
