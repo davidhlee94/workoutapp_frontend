@@ -31,6 +31,22 @@ Upon entering the home page, users can access our Muscle Info page and learn abo
 ###### The Muscle Info Page lets users browse major muscle groups and click into them to view exercises.
 <img width="700" height="auto" src="https://user-images.githubusercontent.com/112284075/216750301-e29abc11-af39-419a-b6fb-1641bf374fbe.png" alt="muscleinfo">
 
+## 👨‍💻 Code Snippets 👨‍💻
+###### Log in new user function.
+<img width="600" height="auto" src="https://user-images.githubusercontent.com/112284075/217040826-ac9afe04-07bb-4bd8-a739-2c5963e52376.png" alt="login">
+
+###### Sign up new user function.
+<img width="600" height="auto" src="https://user-images.githubusercontent.com/112284075/217041171-af4b8b88-026b-4a51-9f5a-7677d75a5f20.png" alt="signup">
+
+###### Log out user function.
+<img width="500" height="auto" src="https://user-images.githubusercontent.com/112284075/217041689-62e77f83-5755-4325-be5c-04d6a5515d68.png" alt="logout">
+
+###### Fetch logged in users workouts only.
+<img width="600" height="auto" src="https://user-images.githubusercontent.com/112284075/217041322-156f81b0-b679-4847-9adc-3f0ccf0c739b.png" alt="existinguser">
+
+###### Creating exercise.
+<img width="600" height="auto" src="https://user-images.githubusercontent.com/112284075/217041585-bd1b4a47-41c3-4ad5-ad90-e426774fba2e.png" alt="signup">
+
 
 ## 🚀 Technologies Used 🚀
 
